@@ -1,12 +1,36 @@
 using UnityEngine;
 
+public enum PrimaryType
+{
+    Spicy,
+    Sour,
+    Sweet,
+}
+public enum SecondaryType
+{
+    Hard,
+    Soft,
+    Gummy,
+}
+
 public class PlayerUnit : MonoBehaviour
 {
-    public bool deployed;
+    [Header("Unit Attributes")]
+    public PrimaryType type1;
+    public SecondaryType type2;
+    public float maxHealth;
+    public float currentHealth;
+    public float attack;
+
+    // Important Variables for this Script
+    private bool deployed;
+    private BoxCollider2D hitbox;
 
     private void Start()
     {
         deployed = false;
+        hitbox = GetComponent<BoxCollider2D>();
+        hitbox.enabled = false;
     }
 
     private void Update()
@@ -32,6 +56,7 @@ public class PlayerUnit : MonoBehaviour
                     {
                         selectedTile.PlaceUnit(this.gameObject);
                         deployed = true;
+                        hitbox.enabled = true;
                         transform.position = hit.collider.gameObject.transform.position;
                         return;
                     }
