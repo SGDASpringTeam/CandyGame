@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class EnemyUnit : MonoBehaviour
 {
@@ -7,11 +8,20 @@ public class EnemyUnit : MonoBehaviour
     public SecondaryType type2;
     public float maxHealth;
     public float currentHealth;
-    public float attack;
-    public float speed;
+    public float attackDamage;
+    public float attackSpeed;
+    public float moveSpeed;
 
     // Important Variables for this Script
-    bool isAttacking = false;
+    bool isAttacking;
+    private Animator animator;
+    private IEnumerator currentAttackRoutine;
+
+    private void Awake()
+    {
+        isAttacking = false;
+        animator = GetComponent<Animator>();
+    }
 
     private void Start()
     {
@@ -26,30 +36,36 @@ public class EnemyUnit : MonoBehaviour
 
     private void MoveUnit()
     {
-        if (!isAttacking) transform.Translate(speed * Time.deltaTime * Vector3.left);
+        RaycastHit2D enemyCheck = Physics2D.Raycast(new Vector2(transform.position.x - 1f, transform.position.y), Vector2.left, 0.5f, LayerMask.GetMask("Enemies"));
+        if (enemyCheck.collider == null && !isAttacking) transform.Translate(moveSpeed * Time.deltaTime * Vector2.left);
+
+        RaycastHit2D playerCheck = Physics2D.Raycast(transform.position, Vector2.left, 1.0f, LayerMask.GetMask("Player Units"));
+        if (playerCheck.collider != null && !isAttacking) AttackUnit(playerCheck.collider.GetComponent<PlayerUnit>());
     }
 
     private void AttackUnit(PlayerUnit foe)
     {
-        foe.currentHealth -= attack * TypeDamageMultiplier(foe);
-        if (foe.currentHealth <= 0) Destroy(foe.gameObject);
-        Debug.Log("Dealt " + attack * TypeDamageMultiplier(foe) + " damage!");
-        Destroy(this.gameObject);
+        if (currentAttackRoutine == null && foe != null && foe.currentHealth > 0)
+        {
+            currentAttackRoutine = TriggerAttack(foe);
+            StartCoroutine(currentAttackRoutine);
+            isAttacking = true;
+        }
     }
+    IEnumerator TriggerAttack(PlayerUnit foe)
+    {
+        while (foe != null && foe.currentHealth > 0)
+        {
+            //animator.SetTrigger("Attack");
+            foe.currentHealth -= attackDamage * TypeDamageMultiplier(foe);
+            //Debug.Log("Dealt " + attackDamage * TypeDamageMultiplier(foe) + " damage to " + foe.gameObject.name + "!");
+            yield return new WaitForSeconds(attackSpeed);
+        }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player Unit"))
-        {
-            AttackUnit(collision.gameObject.GetComponent<PlayerUnit>());
-        }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player Unit"))
-        {
-            isAttacking = false;
-        }
+        if(foe != null) Destroy(foe.gameObject);
+        isAttacking = false;
+        animator.SetTrigger("Move");
+        currentAttackRoutine = null;
     }
 
     private Type SetRandomType<Type>()

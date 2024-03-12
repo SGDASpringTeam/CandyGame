@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 609199527469079518}
   - component: {fileID: 3703578578531335147}
   - component: {fileID: 8149463964330868197}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: gummybear
   m_TagString: Player Unit
   m_Icon: {fileID: 0}
@@ -102,7 +102,8 @@ MonoBehaviour:
   type2: 2
   maxHealth: 10
   currentHealth: 10
-  attack: 5
+  attackDamage: 5
+  attackSpeed: 1
 --- !u!61 &8149463964330868197
 BoxCollider2D:
   m_ObjectHideFlags: 0

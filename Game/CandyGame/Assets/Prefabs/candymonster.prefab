@@ -9,11 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 195427761890757077}
-  - component: {fileID: 6180849783048617102}
   - component: {fileID: 6974721553209556129}
+  - component: {fileID: 6180849783048617102}
+  - component: {fileID: 8463255549013639355}
   - component: {fileID: 5492962818081887842}
   - component: {fileID: 7393683235252615251}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: candymonster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,6 +36,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6974721553209556129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4782870394478399121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbe26d462826a64d850d6c56a9c9115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type1: 1
+  type2: 0
+  maxHealth: 10
+  currentHealth: 10
+  attackDamage: 2
+  attackSpeed: 0.5
+  moveSpeed: 5
 --- !u!212 &6180849783048617102
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -87,24 +107,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6974721553209556129
-MonoBehaviour:
+--- !u!95 &8463255549013639355
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4782870394478399121}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdbe26d462826a64d850d6c56a9c9115, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type1: 1
-  type2: 0
-  maxHealth: 10
-  currentHealth: 10
-  attack: 5
-  speed: 3
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e6c42e64fd0fc0043befee3ccb4207ac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &5492962818081887842
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -134,7 +157,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.025}
@@ -148,7 +171,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.7}
+  m_Size: {x: 0.45, y: 0.65}
   m_EdgeRadius: 0
 --- !u!50 &7393683235252615251
 Rigidbody2D:
