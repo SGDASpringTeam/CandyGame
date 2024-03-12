@@ -27,6 +27,7 @@ public class EnemyUnit : MonoBehaviour
     {
         type1 = SetRandomType<PrimaryType>();
         type2 = SetRandomType<SecondaryType>();
+        DisplayType();
     }
 
     private void Update()
@@ -72,6 +73,17 @@ public class EnemyUnit : MonoBehaviour
     {
         System.Array types = System.Enum.GetValues(typeof(Type));
         return (Type)types.GetValue(UnityEngine.Random.Range(0, types.Length));
+    }
+    private void DisplayType()
+    {
+        string primaryType = type1.ToString();
+        string secondaryType = type2.ToString();
+
+        Transform primaryTransform = transform.Find("PrimaryType/" + primaryType);
+        Transform secondaryTransform = transform.Find("SecondaryType/" + secondaryType);
+
+        primaryTransform.gameObject.SetActive(true);
+        secondaryTransform.gameObject.SetActive(true);
     }
 
     private float TypeDamageMultiplier(PlayerUnit foe)

@@ -1,19 +1,6 @@
 using UnityEngine;
 using System.Collections;
 
-public enum PrimaryType
-{
-    Spicy,
-    Sour,
-    Sweet,
-}
-public enum SecondaryType
-{
-    Hard,
-    Soft,
-    Gummy,
-}
-
 public class PlayerUnit : MonoBehaviour
 {
     [Header("Unit Attributes")]
@@ -27,6 +14,7 @@ public class PlayerUnit : MonoBehaviour
     // Important Variables for this Script
     private bool deployed;
     private BoxCollider2D hitbox;
+    private CandyManager candyManager;
     private IEnumerator currentAttackRoutine;
 
     private void Start()
@@ -34,6 +22,7 @@ public class PlayerUnit : MonoBehaviour
         deployed = false;
         hitbox = GetComponent<BoxCollider2D>();
         hitbox.enabled = false;
+        candyManager = GameObject.Find("Candy Select").GetComponent<CandyManager>();
     }
 
     private void Update()
@@ -96,7 +85,11 @@ public class PlayerUnit : MonoBehaviour
             yield return new WaitForSeconds(attackSpeed);
         }
 
-        if (foe != null) Destroy(foe.gameObject);
+        if (foe != null)
+        {
+            candyManager.ObtainMaterials(foe.type1, foe.type2, 10, 10);
+            Destroy(foe.gameObject);
+        }
         currentAttackRoutine = null;
     }
 
