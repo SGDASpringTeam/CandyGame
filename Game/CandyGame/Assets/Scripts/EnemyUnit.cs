@@ -12,15 +12,17 @@ public class EnemyUnit : MonoBehaviour
     public float attackSpeed;
     public float moveSpeed;
 
+    [Header("Important Components")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private HealthbarScript healthBar;
+
     // Important Variables for this Script
-    bool isAttacking;
-    private Animator animator;
+    private bool isAttacking;
     private IEnumerator currentAttackRoutine;
 
     private void Awake()
     {
         isAttacking = false;
-        animator = GetComponent<Animator>();
     }
 
     private void Start()
@@ -33,6 +35,7 @@ public class EnemyUnit : MonoBehaviour
     private void Update()
     {
         MoveUnit();
+        UpdateHealth();
     }
 
     private void MoveUnit()
@@ -42,6 +45,11 @@ public class EnemyUnit : MonoBehaviour
 
         RaycastHit2D playerCheck = Physics2D.Raycast(transform.position, Vector2.left, 1.0f, LayerMask.GetMask("Player Units"));
         if (playerCheck.collider != null && !isAttacking) AttackUnit(playerCheck.collider.GetComponent<PlayerUnit>());
+    }
+
+    private void UpdateHealth()
+    {
+        if (currentHealth > 0) healthBar.UpdateHealthBar(currentHealth, maxHealth);
     }
 
     private void AttackUnit(PlayerUnit foe)
@@ -126,5 +134,14 @@ public class EnemyUnit : MonoBehaviour
         else if (type1Multiplier == 1.5 && type2Multiplier == 1.5) typeMultiplier = 2.0f;
 
         return typeMultiplier;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player Base"))
+        {
+            other.gameObject.GetComponent<PlayerScript>().TakeDamage();
+            Destroy(this.gameObject);
+        }
     }
 }

@@ -11,24 +11,35 @@ public class PlayerUnit : MonoBehaviour
     public float attackDamage;
     public float attackSpeed;
 
+    [Header("Important Components")]
+    [SerializeField] private HealthbarScript healthBar;
+
     // Important Variables for this Script
     private bool deployed;
     private BoxCollider2D hitbox;
     private CandyManager candyManager;
+    private GameManager gameManager;
     private IEnumerator currentAttackRoutine;
 
     private void Start()
     {
         deployed = false;
+
         hitbox = GetComponent<BoxCollider2D>();
         hitbox.enabled = false;
+
         candyManager = GameObject.Find("Candy Select").GetComponent<CandyManager>();
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     private void Update()
     {
         if (!deployed) ReadyToDeploy();
-        else PrepareAttack();
+        else
+        {
+            PrepareAttack();
+            UpdateHealth();
+        }
     }
 
     private void ReadyToDeploy()
@@ -57,6 +68,11 @@ public class PlayerUnit : MonoBehaviour
             }
             Destroy(this.gameObject);
         }
+    }
+
+    private void UpdateHealth()
+    {
+        if (currentHealth > 0) healthBar.UpdateHealthBar(currentHealth, maxHealth);
     }
 
     private void PrepareAttack()
@@ -88,6 +104,7 @@ public class PlayerUnit : MonoBehaviour
         if (foe != null)
         {
             candyManager.ObtainMaterials(foe.type1, foe.type2, 10, 10);
+            gameManager.UpdateEnemiesDestroyed();
             Destroy(foe.gameObject);
         }
         currentAttackRoutine = null;
