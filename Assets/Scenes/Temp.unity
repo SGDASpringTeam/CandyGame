@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 126367061}
   - component: {fileID: 126367060}
   m_Layer: 5
-  m_Name: Option0 (4)
+  m_Name: Option4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -704,7 +704,7 @@ GameObject:
   - component: {fileID: 155597442}
   - component: {fileID: 155597441}
   m_Layer: 5
-  m_Name: Currency0 (5)
+  m_Name: Currency5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -915,7 +915,7 @@ GameObject:
   - component: {fileID: 249343376}
   - component: {fileID: 249343375}
   m_Layer: 5
-  m_Name: Currency0 (3)
+  m_Name: Currency3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -992,7 +992,7 @@ GameObject:
   - component: {fileID: 252046047}
   - component: {fileID: 252046046}
   m_Layer: 5
-  m_Name: Currency0 (1)
+  m_Name: Currency1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1141,7 +1141,7 @@ GameObject:
   - component: {fileID: 281642325}
   - component: {fileID: 281642324}
   m_Layer: 5
-  m_Name: Currency0 (8)
+  m_Name: Currency8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1670,7 +1670,7 @@ GameObject:
   - component: {fileID: 479330675}
   - component: {fileID: 479330674}
   m_Layer: 5
-  m_Name: Currency0 (1)
+  m_Name: Currency1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2165,7 +2165,7 @@ GameObject:
   - component: {fileID: 528045484}
   - component: {fileID: 528045483}
   m_Layer: 5
-  m_Name: Currency0 (4)
+  m_Name: Currency4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2242,7 +2242,7 @@ GameObject:
   - component: {fileID: 551742992}
   - component: {fileID: 551742991}
   m_Layer: 5
-  m_Name: Currency0 (2)
+  m_Name: Currency2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2820,7 +2820,7 @@ GameObject:
   - component: {fileID: 682348305}
   - component: {fileID: 682348304}
   m_Layer: 5
-  m_Name: Currency0 (4)
+  m_Name: Currency4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3256,7 +3256,7 @@ GameObject:
   - component: {fileID: 728662573}
   - component: {fileID: 728662572}
   m_Layer: 5
-  m_Name: Currency0 (3)
+  m_Name: Currency3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3786,7 +3786,7 @@ GameObject:
   - component: {fileID: 815303191}
   - component: {fileID: 815303190}
   m_Layer: 5
-  m_Name: Option0 (3)
+  m_Name: Option3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3919,7 +3919,7 @@ GameObject:
   - component: {fileID: 865407624}
   - component: {fileID: 865407623}
   m_Layer: 5
-  m_Name: Currency0 (8)
+  m_Name: Currency8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4682,7 +4682,7 @@ GameObject:
   - component: {fileID: 1015537455}
   - component: {fileID: 1015537454}
   m_Layer: 5
-  m_Name: Currency0 (6)
+  m_Name: Currency6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5690,7 +5690,7 @@ GameObject:
   - component: {fileID: 1204555353}
   - component: {fileID: 1204555352}
   m_Layer: 5
-  m_Name: Currency0 (7)
+  m_Name: Currency7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5842,7 +5842,7 @@ GameObject:
   - component: {fileID: 1212573487}
   - component: {fileID: 1212573486}
   m_Layer: 5
-  m_Name: Currency0 (7)
+  m_Name: Currency7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6282,7 +6282,7 @@ GameObject:
   - component: {fileID: 1293147653}
   - component: {fileID: 1293147652}
   m_Layer: 5
-  m_Name: Option0 (2)
+  m_Name: Option2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6889,7 +6889,7 @@ GameObject:
   - component: {fileID: 1462861883}
   - component: {fileID: 1462861882}
   m_Layer: 5
-  m_Name: Currency0 (6)
+  m_Name: Currency6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7101,7 +7101,7 @@ GameObject:
   - component: {fileID: 1493038412}
   - component: {fileID: 1493038411}
   m_Layer: 5
-  m_Name: Option0 (5)
+  m_Name: Option5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7309,7 +7309,7 @@ GameObject:
   - component: {fileID: 1534274926}
   - component: {fileID: 1534274925}
   m_Layer: 5
-  m_Name: Currency0 (5)
+  m_Name: Currency5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8081,7 +8081,7 @@ GameObject:
   - component: {fileID: 1749389095}
   - component: {fileID: 1749389094}
   m_Layer: 5
-  m_Name: Option0 (1)
+  m_Name: Option1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8749,7 +8749,7 @@ GameObject:
   - component: {fileID: 1965888655}
   - component: {fileID: 1965888654}
   m_Layer: 5
-  m_Name: Currency0 (2)
+  m_Name: Currency2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
