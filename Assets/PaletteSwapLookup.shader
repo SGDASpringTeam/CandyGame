@@ -12,6 +12,8 @@ Shader "Hidden/PaletteSwapLookup"
     {
         Cull Off ZWrite Off ZTest Always
 
+        Blend SrcAlpha OneMinusSrcAlpha
+
         Pass
         {
             CGPROGRAM
@@ -49,8 +51,10 @@ Shader "Hidden/PaletteSwapLookup"
                 if (tex2D(_MainTex, i.uv).a != 0) {
                     float x = tex2D(_MainTex, i.uv).r;
                 return tex2D(_PaletteTex, float2(x, 0));
-                } else {
-                    return tex2D(_Transparent, float2(0,0));
+                } 
+                else 
+                {
+                    return tex2D(_MainTex, i.uv);
                 }
             }
 
