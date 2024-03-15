@@ -17,6 +17,7 @@ public class PlayerUnit : MonoBehaviour
     // Important Variables for this Script
     private bool deployed;
     private BoxCollider2D hitbox;
+    private GridTile placedTile;
     private CandyManager candyManager;
     private GameManager gameManager;
     private IEnumerator currentAttackRoutine;
@@ -55,10 +56,10 @@ public class PlayerUnit : MonoBehaviour
             {
                 if (hit.collider.GetComponent<GridTile>() != null)
                 {
-                    GridTile selectedTile = hit.collider.GetComponent<GridTile>();
-                    if (selectedTile.currentUnit == null)
+                    placedTile = hit.collider.GetComponent<GridTile>();
+                    if (placedTile.placeable && placedTile.currentUnit == null)
                     {
-                        selectedTile.PlaceUnit(this.gameObject);
+                        placedTile.PlaceUnit(this.gameObject);
                         deployed = true;
                         hitbox.enabled = true;
                         transform.position = hit.collider.gameObject.transform.position;
@@ -73,6 +74,12 @@ public class PlayerUnit : MonoBehaviour
     private void UpdateHealth()
     {
         if (currentHealth > 0) healthBar.UpdateHealthBar(currentHealth, maxHealth);
+        else KillUnit();
+    }
+    private void KillUnit()
+    {
+        placedTile.currentUnit = null;
+        Destroy(gameObject);
     }
 
     private void PrepareAttack()
@@ -103,7 +110,7 @@ public class PlayerUnit : MonoBehaviour
 
         if (foe != null)
         {
-            candyManager.ObtainMaterials(foe.type1, foe.type2, 10, 10);
+            candyManager.ObtainMaterials(foe.type1, foe.type2);
             gameManager.UpdateEnemiesDestroyed();
             Destroy(foe.gameObject);
         }

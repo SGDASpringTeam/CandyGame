@@ -1463,6 +1463,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efb2013d3c31f9c45b63316642063f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Peppermint: 1
+  RockCandy: 1
+  HardCandy: 1
+  Licorice: 1
+  Chocolate: 1
+  SourTaffy: 1
+  CinnamonJelly: 1
+  Bubblegum: 1
+  Gumdrop: 1
   materialsAmount: {fileID: 1853659784}
 --- !u!1001 &694062791
 PrefabInstance:
@@ -1993,6 +2002,10 @@ PrefabInstance:
     - target: {fileID: 4889994402223432433, guid: 7ba824f287e8b0a4292a0b2365ae649c, type: 3}
       propertyPath: m_Name
       value: Tile0.0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919526474653673241, guid: 7ba824f287e8b0a4292a0b2365ae649c, type: 3}
+      propertyPath: placeable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3220,6 +3233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1544305860}
+  - component: {fileID: 1544305861}
   m_Layer: 3
   m_Name: Player Grid
   m_TagString: Untagged
@@ -3245,6 +3259,24 @@ Transform:
   - {fileID: 1371363576}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1544305861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544305859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: affb6531c62d35d4581b6449c233ea72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lanes: 3
+  spaces: 11
+  playerGrid:
+  - {fileID: 1485451372}
+  - {fileID: 786098822}
+  - {fileID: 1371363575}
 --- !u!1 &1570379165
 GameObject:
   m_ObjectHideFlags: 0
@@ -3556,6 +3588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile0.0
       objectReference: {fileID: 0}
+    - target: {fileID: 6919526474653673241, guid: 7ba824f287e8b0a4292a0b2365ae649c, type: 3}
+      propertyPath: placeable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3774,8 +3810,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 402, y: -343}
-  m_SizeDelta: {x: 300, y: 330}
+  m_AnchoredPosition: {x: 450, y: -330}
+  m_SizeDelta: {x: 440, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1853659784
 MonoBehaviour:
@@ -3797,19 +3833,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Spicy - 10
+  m_text: 'Inventory Displayed Here
 
-    Sweet - 10
+    _______________
 
-    Sour - 10
+    _______________
 
-
-    Gummy - 10
-
-    Hard -
-    10
-
-    Soft - 10'
+    _______________'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3836,8 +3866,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4198,6 +4228,10 @@ PrefabInstance:
     - target: {fileID: 4889994402223432433, guid: 7ba824f287e8b0a4292a0b2365ae649c, type: 3}
       propertyPath: m_Name
       value: Tile0.0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919526474653673241, guid: 7ba824f287e8b0a4292a0b2365ae649c, type: 3}
+      propertyPath: placeable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

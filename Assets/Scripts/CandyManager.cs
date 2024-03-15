@@ -1,27 +1,23 @@
 using UnityEngine;
 using TMPro;
-using System.Collections.Generic;
 
 public class CandyManager : MonoBehaviour
 {
-    private Dictionary<PrimaryType, int> primaryMaterials;
-    private Dictionary<SecondaryType, int> secondaryMaterials;
+    [Header("Materials")]
+    public int Peppermint = 1;
+    public int RockCandy = 1;
+    public int HardCandy = 1;
+    public int Licorice = 1;
+    public int Chocolate = 1;
+    public int SourTaffy = 1;
+    public int CinnamonJelly = 1;
+    public int Bubblegum = 1;
+    public int Gumdrop = 1;
 
     [SerializeField] private TextMeshProUGUI materialsAmount;
 
-    private void Start()
+    private void Update()
     {
-        primaryMaterials = new Dictionary<PrimaryType, int>();
-        secondaryMaterials = new Dictionary<SecondaryType, int>();
-
-        primaryMaterials[PrimaryType.Sour] = 10;
-        primaryMaterials[PrimaryType.Spicy] = 10;
-        primaryMaterials[PrimaryType.Sweet] = 10;
-
-        secondaryMaterials[SecondaryType.Gummy] = 10;
-        secondaryMaterials[SecondaryType.Soft] = 10;
-        secondaryMaterials[SecondaryType.Hard] = 10;
-
         UpdateMaterials();
     }
 
@@ -32,23 +28,66 @@ public class CandyManager : MonoBehaviour
         Instantiate(unit, mousePosition, Quaternion.identity);
     }
 
-    public void ObtainMaterials(PrimaryType type1, SecondaryType type2, int materials1, int materials2)
+    public void ObtainMaterials(PrimaryType type1, SecondaryType type2)
     {
-        primaryMaterials[type1] += materials1;
-        secondaryMaterials[type2] += materials2;
-        UpdateMaterials();
+        switch (type1)
+        {
+            case PrimaryType.Spicy:
+                switch (type2)
+                {
+                    case SecondaryType.Hard:
+                        Peppermint++;
+                        break;
+                    case SecondaryType.Soft:
+                        Licorice++;
+                        break;
+                    case SecondaryType.Gummy:
+                        CinnamonJelly++;
+                        break;
+                }
+                break;
+            case PrimaryType.Sweet:
+                switch (type2)
+                {
+                    case SecondaryType.Hard:
+                        RockCandy++;
+                        break;
+                    case SecondaryType.Soft:
+                        Chocolate++;
+                        break;
+                    case SecondaryType.Gummy:
+                        Bubblegum++;
+                        break;
+                }
+                break;
+            case PrimaryType.Sour:
+                switch (type2)
+                {
+                    case SecondaryType.Hard:
+                        HardCandy++;
+                        break;
+                    case SecondaryType.Soft:
+                        SourTaffy++;
+                        break;
+                    case SecondaryType.Gummy:
+                        Gumdrop++;
+                        break;
+                }
+                break;
+        }
     }
     private void UpdateMaterials()
     {
-        materialsAmount.text = "";
-        foreach (var pair in primaryMaterials)
-        {
-            materialsAmount.text += pair.Key + " - " + pair.Value + "\n";
-        }
-        materialsAmount.text += "\n";
-        foreach (var pair in secondaryMaterials)
-        {
-            materialsAmount.text += pair.Key + " - " + pair.Value + "\n";
-        }
+        materialsAmount.text = "" +
+
+            "Peppermint x" + Peppermint + "\n" +
+            "Rock Candy x" + RockCandy + "\n" +
+            "Hard Candy x" + HardCandy + "\n" +
+            "Licorice x" + Licorice + "\n" +
+            "Chocolate x" + Chocolate + "\n" +
+            "Sour Taffy x" + SourTaffy + "\n" +
+            "Cinnamon Jelly x" + CinnamonJelly + "\n" +
+            "Bubblegum x" + Bubblegum + "\n" +
+            "Gumdrop x" + Gumdrop;
     }
 }

@@ -71,7 +71,6 @@ public class EnemyUnit : MonoBehaviour
             yield return new WaitForSeconds(attackSpeed);
         }
 
-        if(foe != null) Destroy(foe.gameObject);
         isAttacking = false;
         animator.SetTrigger("Move");
         currentAttackRoutine = null;
@@ -138,10 +137,24 @@ public class EnemyUnit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.CompareTag("Tile"))
+        {
+            GridTile currentTile = other.gameObject.GetComponent<GridTile>();
+            if (currentTile.currentUnit == null) currentTile.PlaceUnit(this.gameObject);
+        }
+
         if (other.CompareTag("Player Base"))
         {
             other.gameObject.GetComponent<PlayerScript>().TakeDamage();
             Destroy(this.gameObject);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Tile"))
+        {
+            GridTile currentTile = other.gameObject.GetComponent<GridTile>();
+            currentTile.currentUnit = null;
         }
     }
 }
