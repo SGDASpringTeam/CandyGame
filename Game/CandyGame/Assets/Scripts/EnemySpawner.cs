@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -20,10 +21,13 @@ public class EnemySpawner : MonoBehaviour
     public float spawnInterval;
     public float waveDuration;
 
+    public int waveCount;
+
     private void Start()
     {
         spawnedEnemies = 0;
         gameTime = 0.0f;
+        waveCount = 0;
     }
     private void Update()
     {
@@ -39,8 +43,8 @@ public class EnemySpawner : MonoBehaviour
     {
         if (isInfinite || spawnedEnemies < maxNumberOfEnemies)
         {
-            GameObject enemyUnit = enemyUnits[Random.Range(0, enemyUnits.Length)];
-            Transform spawnPosition = spawnPositions[Random.Range(0, spawnPositions.Length)];
+            GameObject enemyUnit = enemyUnits[UnityEngine.Random.Range(0, enemyUnits.Length)];
+            Transform spawnPosition = spawnPositions[UnityEngine.Random.Range(0, spawnPositions.Length)];
             Instantiate(enemyUnit, spawnPosition.position, Quaternion.identity);
         }
 
@@ -51,6 +55,9 @@ public class EnemySpawner : MonoBehaviour
     {
         yield return new WaitForSeconds(waveDuration);
         CancelInvoke(nameof(SpawnEnemies));
+
+        // increments the wave # for every wave
+        ++waveCount;
 
         StartSpawning();
     }
