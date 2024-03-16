@@ -8,8 +8,8 @@ public class PaletteSwapUnit : MonoBehaviour
     public Texture LookupTexture;
 
     Material _mat;
-    // Start is called before the first frame update
-    void Start()
+    // SHOULD NOT BE IN UPDATE FOR PERFORMANCE REASONS
+    void Update()
     {
         Shader shader = Shader.Find("Hidden/PaletteSwapLookup");
         if (_mat == null)
