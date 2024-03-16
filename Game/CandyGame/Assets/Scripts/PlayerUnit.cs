@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerUnit : MonoBehaviour
 {
     [Header("Unit Attributes")]
+    public string moldName;
     public PrimaryType type1;
     public SecondaryType type2;
     public float maxHealth;
@@ -63,6 +64,7 @@ public class PlayerUnit : MonoBehaviour
                         deployed = true;
                         hitbox.enabled = true;
                         transform.position = hit.collider.gameObject.transform.position;
+                        candyManager.DeployUnit(moldName);
                         return;
                     }
                 }

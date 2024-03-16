@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c22a9bb93e9a2614b802d07be13e16c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moldName: Fish
   type1: 0
   type2: 1
   maxHealth: 7

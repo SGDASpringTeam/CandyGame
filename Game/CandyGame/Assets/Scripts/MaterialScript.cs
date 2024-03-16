@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
+using System.Collections.Generic;
 
 public class MaterialScript : MonoBehaviour
 {
@@ -17,16 +19,28 @@ public class MaterialScript : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0))
         {
-            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
-            if (hit.collider != null)
+            PointerEventData eventData = new(EventSystem.current);
+            eventData.position = Input.mousePosition;
+            List<RaycastResult> results = new();
+            EventSystem.current.RaycastAll(eventData, results);
+
+            if (results.Count > 0)
             {
-                if (hit.collider.GetComponent<UnitButton>() != null)
+                foreach (RaycastResult result in results)
                 {
-                    UnitButton unitButton = hit.collider.GetComponent<UnitButton>();
-                    unitButton.FillMold(candyType);
+                    if (result.gameObject.CompareTag("Mold"))
+                    {
+                        UnitButton unitButton = result.gameObject.GetComponent<UnitButton>();
+                        if (unitButton != null)
+                        {
+                            unitButton.FillMold(candyType);
+                            break;
+                        }
+                    }
                 }
             }
-            Destroy(this.gameObject);
+
+            Destroy(gameObject);
         }
     }
 }

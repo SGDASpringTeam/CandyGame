@@ -1258,9 +1258,10 @@ GameObject:
   - component: {fileID: 295262612}
   - component: {fileID: 295262611}
   - component: {fileID: 295262614}
+  - component: {fileID: 295262615}
   m_Layer: 5
   m_Name: Fish
-  m_TagString: Untagged
+  m_TagString: Mold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1378,8 +1379,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df636b8ea3faf14db17c15830df3e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UnitPrefab: {fileID: 1666441483471069246, guid: a751a23ad8dd5fa41b5ac0fe50466c5a, type: 3}
   isFilled: 0
   filledCandy: 0
+--- !u!114 &295262615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295262609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 656464606}
+          m_TargetAssemblyTypeName: CandyManager, Assembly-CSharp
+          m_MethodName: SelectUnit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 295262614}
+            m_ObjectArgumentAssemblyTypeName: UnitButton, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &304378524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1551,6 +1582,7 @@ GameObject:
   - component: {fileID: 398426304}
   - component: {fileID: 398426303}
   - component: {fileID: 398426302}
+  - component: {fileID: 398426305}
   m_Layer: 5
   m_Name: Bubblegum
   m_TagString: Untagged
@@ -1673,6 +1705,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398426300}
   m_CullTransparentMesh: 1
+--- !u!114 &398426305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398426300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 656464606}
+          m_TargetAssemblyTypeName: CandyManager, Assembly-CSharp
+          m_MethodName: SelectMaterial
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2819726517701905509, guid: 3fd0bd690b0bb1c48be958e531694e3d, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &403295209 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3320184156639485836, guid: 7ba824f287e8b0a4292a0b2365ae649c, type: 3}
@@ -1820,6 +1881,7 @@ GameObject:
   - component: {fileID: 456918893}
   - component: {fileID: 456918892}
   - component: {fileID: 456918891}
+  - component: {fileID: 456918894}
   m_Layer: 5
   m_Name: RockCandy
   m_TagString: Untagged
@@ -1942,6 +2004,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456918889}
   m_CullTransparentMesh: 1
+--- !u!114 &456918894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456918889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 656464606}
+          m_TargetAssemblyTypeName: CandyManager, Assembly-CSharp
+          m_MethodName: SelectMaterial
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 6130615834229865169, guid: 702be1b9b711f7d438f90b147e91b2a5, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &481545237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3320184156639485836, guid: 7ba824f287e8b0a4292a0b2365ae649c, type: 3}
@@ -1959,6 +2050,7 @@ GameObject:
   - component: {fileID: 511193716}
   - component: {fileID: 511193715}
   - component: {fileID: 511193714}
+  - component: {fileID: 511193717}
   m_Layer: 5
   m_Name: Chocolate
   m_TagString: Untagged
@@ -2081,6 +2173,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 511193712}
   m_CullTransparentMesh: 1
+--- !u!114 &511193717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511193712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 656464606}
+          m_TargetAssemblyTypeName: CandyManager, Assembly-CSharp
+          m_MethodName: SelectMaterial
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 5531745407908951533, guid: a9a410d1ef2b006439671bb9768c5bcc, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &533692747
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,6 +2214,7 @@ GameObject:
   - component: {fileID: 533692751}
   - component: {fileID: 533692750}
   - component: {fileID: 533692749}
+  - component: {fileID: 533692752}
   m_Layer: 5
   m_Name: HardCandy
   m_TagString: Untagged
@@ -2215,6 +2337,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533692747}
   m_CullTransparentMesh: 1
+--- !u!114 &533692752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533692747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 656464606}
+          m_TargetAssemblyTypeName: CandyManager, Assembly-CSharp
+          m_MethodName: SelectMaterial
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 4875569919776834429, guid: 0f64540ac2ff03844bdf849127552042, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &549033759
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,6 +2512,7 @@ GameObject:
   - component: {fileID: 590180365}
   - component: {fileID: 590180364}
   - component: {fileID: 590180363}
+  - component: {fileID: 590180366}
   m_Layer: 5
   m_Name: CinnamonJelly
   m_TagString: Untagged
@@ -2483,6 +2635,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590180361}
   m_CullTransparentMesh: 1
+--- !u!114 &590180366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590180361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 656464606}
+          m_TargetAssemblyTypeName: CandyManager, Assembly-CSharp
+          m_MethodName: SelectMaterial
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1583871307884736819, guid: 8a0e0faad95f1f1438d34a9c597e62bf, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &596680224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3320184156639485836, guid: 7ba824f287e8b0a4292a0b2365ae649c, type: 3}
@@ -2640,7 +2821,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 258469340}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -2686,6 +2867,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efb2013d3c31f9c45b63316642063f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingAmount: 3
+  buttons:
+  - {fileID: 1178513789}
+  - {fileID: 1914037436}
+  - {fileID: 295262609}
   amounts:
   - {fileID: 799830381}
   - {fileID: 1202202930}
@@ -3771,6 +3957,7 @@ GameObject:
   - component: {fileID: 868737586}
   - component: {fileID: 868737585}
   - component: {fileID: 868737584}
+  - component: {fileID: 868737587}
   m_Layer: 5
   m_Name: Gumdrop
   m_TagString: Untagged
@@ -3893,6 +4080,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868737582}
   m_CullTransparentMesh: 1
+--- !u!114 &868737587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868737582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 656464606}
+          m_TargetAssemblyTypeName: CandyManager, Assembly-CSharp
+          m_MethodName: SelectMaterial
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8328922231930140708, guid: 3ac66e8a877f284488e5f28486a7e9c7, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &893624695
 GameObject:
   m_ObjectHideFlags: 0
@@ -4557,6 +4773,7 @@ GameObject:
   - component: {fileID: 1089872178}
   - component: {fileID: 1089872177}
   - component: {fileID: 1089872176}
+  - component: {fileID: 1089872179}
   m_Layer: 5
   m_Name: SourTaffy
   m_TagString: Untagged
@@ -4679,6 +4896,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089872174}
   m_CullTransparentMesh: 1
+--- !u!114 &1089872179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089872174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 656464606}
+          m_TargetAssemblyTypeName: CandyManager, Assembly-CSharp
+          m_MethodName: SelectMaterial
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 4513409303893590267, guid: e768b3687fb14b742ba1cca6fcf3db1a, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1090244758
 GameObject:
   m_ObjectHideFlags: 0
@@ -4990,9 +5236,10 @@ GameObject:
   - component: {fileID: 1178513792}
   - component: {fileID: 1178513791}
   - component: {fileID: 1178513794}
+  - component: {fileID: 1178513795}
   m_Layer: 5
   m_Name: Bear
-  m_TagString: Untagged
+  m_TagString: Mold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5110,8 +5357,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df636b8ea3faf14db17c15830df3e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UnitPrefab: {fileID: 1666441483471069246, guid: 8e2dca81fa24b3042a2cb21efb29cb9f, type: 3}
   isFilled: 0
   filledCandy: 0
+--- !u!114 &1178513795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178513789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 656464606}
+          m_TargetAssemblyTypeName: CandyManager, Assembly-CSharp
+          m_MethodName: SelectUnit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1178513794}
+            m_ObjectArgumentAssemblyTypeName: UnitButton, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1202202928
 GameObject:
   m_ObjectHideFlags: 0
@@ -6649,6 +6926,7 @@ GameObject:
   - component: {fileID: 1727731669}
   - component: {fileID: 1727731668}
   - component: {fileID: 1727731667}
+  - component: {fileID: 1727731670}
   m_Layer: 5
   m_Name: Peppermint
   m_TagString: Untagged
@@ -6720,19 +6998,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1727731668}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 656464606}
-        m_TargetAssemblyTypeName: CandyManager, Assembly-CSharp
-        m_MethodName: SelectMaterial
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1145433046489032509, guid: e8255e0a04df9f84795d94d953a36804, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1727731668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6771,6 +7037,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727731665}
   m_CullTransparentMesh: 1
+--- !u!114 &1727731670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727731665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 656464606}
+          m_TargetAssemblyTypeName: CandyManager, Assembly-CSharp
+          m_MethodName: SelectMaterial
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1145433046489032509, guid: e8255e0a04df9f84795d94d953a36804, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &1742636665 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3320184156639485836, guid: 7ba824f287e8b0a4292a0b2365ae649c, type: 3}
@@ -7240,9 +7535,10 @@ GameObject:
   - component: {fileID: 1914037439}
   - component: {fileID: 1914037438}
   - component: {fileID: 1914037441}
+  - component: {fileID: 1914037442}
   m_Layer: 5
   m_Name: Worm
-  m_TagString: Untagged
+  m_TagString: Mold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7360,8 +7656,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df636b8ea3faf14db17c15830df3e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UnitPrefab: {fileID: 1666441483471069246, guid: 05dd643c5671c3e43b285fb97e34e8d8, type: 3}
   isFilled: 0
   filledCandy: 0
+--- !u!114 &1914037442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914037436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 656464606}
+          m_TargetAssemblyTypeName: CandyManager, Assembly-CSharp
+          m_MethodName: SelectUnit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1914037441}
+            m_ObjectArgumentAssemblyTypeName: UnitButton, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1945312428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7591,6 +7917,7 @@ GameObject:
   - component: {fileID: 2075198291}
   - component: {fileID: 2075198290}
   - component: {fileID: 2075198289}
+  - component: {fileID: 2075198292}
   m_Layer: 5
   m_Name: Licorice
   m_TagString: Untagged
@@ -7713,6 +8040,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075198287}
   m_CullTransparentMesh: 1
+--- !u!114 &2075198292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075198287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 656464606}
+          m_TargetAssemblyTypeName: CandyManager, Assembly-CSharp
+          m_MethodName: SelectMaterial
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8196505179032379982, guid: 0751dd787ce12b3449d4d2c1e777f9ad, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &2084552842 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3320184156639485836, guid: 7ba824f287e8b0a4292a0b2365ae649c, type: 3}

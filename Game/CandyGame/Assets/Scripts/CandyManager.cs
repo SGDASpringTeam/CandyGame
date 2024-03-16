@@ -4,20 +4,24 @@ using System.Collections.Generic;
 
 public class CandyManager : MonoBehaviour
 {
+    public int startingAmount;
+
+    [SerializeField] private GameObject[] buttons;
     [SerializeField] private TextMeshProUGUI[] amounts;
+
     private readonly Dictionary<string, int> materials = new();
 
     private void Start()
     {
-        materials.Add("Peppermint", 1);
-        materials.Add("RockCandy", 1);
-        materials.Add("HardCandy", 1);
-        materials.Add("Licorice", 1);
-        materials.Add("Chocolate", 1);
-        materials.Add("SourTaffy", 1);
-        materials.Add("CinnamonJelly", 1);
-        materials.Add("Bubblegum", 1);
-        materials.Add("Gumdrop", 1);
+        materials.Add("Peppermint", startingAmount);
+        materials.Add("RockCandy", startingAmount);
+        materials.Add("HardCandy", startingAmount);
+        materials.Add("Licorice", startingAmount);
+        materials.Add("Chocolate", startingAmount);
+        materials.Add("SourTaffy", startingAmount);
+        materials.Add("CinnamonJelly", startingAmount);
+        materials.Add("Bubblegum", startingAmount);
+        materials.Add("Gumdrop", startingAmount);
     }
     private void Update()
     {
@@ -32,14 +36,33 @@ public class CandyManager : MonoBehaviour
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePosition.z = 0;
             Instantiate(material, mousePosition, Quaternion.identity);
-            materials[materialType]--;
         }
     }
-    public void SelectUnit(GameObject unit)
+    public void SelectUnit(UnitButton unit)
     {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePosition.z = 0;
-        Instantiate(unit, mousePosition, Quaternion.identity);
+        if(unit.isFilled)
+        {
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePosition.z = 0;
+            Instantiate(unit.UnitPrefab, mousePosition, Quaternion.identity);
+        }
+    }
+
+    public void UseMaterial(CandyType candyType)
+    {
+        string materialType = candyType.ToString();
+        materials[materialType]--;
+    }
+    public void DeployUnit(string unitName)
+    {
+        foreach(GameObject unitButton in buttons)
+        {
+            if(unitButton.name == unitName)
+            {
+                unitButton.GetComponent<UnitButton>().BreakMold();
+                break;
+            }
+        }
     }
 
     public void ObtainMaterials(PrimaryType type1, SecondaryType type2)
