@@ -44,6 +44,47 @@ public class PlayerUnit : MonoBehaviour
         }
     }
 
+    public void SetTyping(CandyType candyType)
+    {
+        if (candyType == CandyType.None) return;
+
+        else if (candyType == CandyType.Peppermint) {
+        type1 = PrimaryType.Spicy;
+        type2 = SecondaryType.Hard; }
+
+        else if (candyType == CandyType.RockCandy) {
+        type1 = PrimaryType.Sweet;
+        type2 = SecondaryType.Hard; }
+
+        else if (candyType == CandyType.HardCandy) {
+        type1 = PrimaryType.Sour;
+        type2 = SecondaryType.Hard; }
+
+        else if (candyType == CandyType.Licorice) {
+        type1 = PrimaryType.Spicy;
+        type2 = SecondaryType.Soft; }
+
+        else if (candyType == CandyType.Chocolate) {
+        type1 = PrimaryType.Sweet;
+        type2 = SecondaryType.Soft; }
+
+        else if (candyType == CandyType.SourTaffy) {
+        type1 = PrimaryType.Sour;
+        type2 = SecondaryType.Soft; }
+
+        else if (candyType == CandyType.CinnamonJelly) {
+        type1 = PrimaryType.Spicy;
+        type2 = SecondaryType.Gummy; }
+
+        else if (candyType == CandyType.Bubblegum) {
+        type1 = PrimaryType.Sweet;
+        type2 = SecondaryType.Gummy; }
+
+        else if (candyType == CandyType.Gumdrop) {
+        type1 = PrimaryType.Sour;
+        type2 = SecondaryType.Gummy; }
+    }
+
     private void ReadyToDeploy()
     {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);

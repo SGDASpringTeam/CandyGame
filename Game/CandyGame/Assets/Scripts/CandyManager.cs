@@ -38,26 +38,30 @@ public class CandyManager : MonoBehaviour
             Instantiate(material, mousePosition, Quaternion.identity);
         }
     }
+    public void UseMaterial(CandyType candyType)
+    {
+        string materialType = candyType.ToString();
+        materials[materialType]--;
+    }
+
     public void SelectUnit(UnitButton unit)
     {
         if(unit.isFilled)
         {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePosition.z = 0;
-            Instantiate(unit.UnitPrefab, mousePosition, Quaternion.identity);
-        }
-    }
 
-    public void UseMaterial(CandyType candyType)
-    {
-        string materialType = candyType.ToString();
-        materials[materialType]--;
+            GameObject newUnit = unit.UnitPrefab;
+            newUnit.GetComponent<PlayerUnit>().SetTyping(unit.filledCandy);
+
+            Instantiate(newUnit, mousePosition, Quaternion.identity);
+        }
     }
     public void DeployUnit(string unitName)
     {
-        foreach(GameObject unitButton in buttons)
+        foreach (GameObject unitButton in buttons)
         {
-            if(unitButton.name == unitName)
+            if (unitButton.name == unitName)
             {
                 unitButton.GetComponent<UnitButton>().BreakMold();
                 break;
