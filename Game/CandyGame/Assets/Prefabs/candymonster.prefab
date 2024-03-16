@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5811463489314431364}
   - component: {fileID: 60834530782980998}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Sour
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2253234939195934010}
   - component: {fileID: 8832079795200755487}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Spicy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8951150235749199562}
   - component: {fileID: 866374114968576696}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Sweet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6766750231024405657}
   - component: {fileID: 3692438013519158891}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Soft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 990138580598262469}
   - component: {fileID: 6949602996966743552}
   - component: {fileID: 3148882038506748751}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 458074714749839453}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: SecondaryType
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 6974721553209556129}
   - component: {fileID: 5492962818081887842}
   - component: {fileID: 7393683235252615251}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: candymonster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -617,7 +617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3701843549393092894}
   - component: {fileID: 5465812124719602598}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Gummy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -700,7 +700,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7084549620040978167}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: PrimaryType
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -735,7 +735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2294720636132670884}
   - component: {fileID: 9004539572341824786}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Hard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -825,6 +825,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4332006040674747807, guid: 03b9cba07d7cf944aaf8d10f52c4ef47, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8146026369286624414, guid: 03b9cba07d7cf944aaf8d10f52c4ef47, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6
@@ -869,9 +873,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9055926921742940549, guid: 03b9cba07d7cf944aaf8d10f52c4ef47, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9105125121754588909, guid: 03b9cba07d7cf944aaf8d10f52c4ef47, type: 3}
       propertyPath: m_Name
       value: Health Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105125121754588909, guid: 03b9cba07d7cf944aaf8d10f52c4ef47, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

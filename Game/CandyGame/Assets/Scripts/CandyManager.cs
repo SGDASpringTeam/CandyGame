@@ -1,26 +1,40 @@
 using UnityEngine;
 using TMPro;
+using System.Collections.Generic;
 
 public class CandyManager : MonoBehaviour
 {
-    [Header("Materials")]
-    public int Peppermint = 1;
-    public int RockCandy = 1;
-    public int HardCandy = 1;
-    public int Licorice = 1;
-    public int Chocolate = 1;
-    public int SourTaffy = 1;
-    public int CinnamonJelly = 1;
-    public int Bubblegum = 1;
-    public int Gumdrop = 1;
+    [SerializeField] private TextMeshProUGUI[] amounts;
+    private readonly Dictionary<string, int> materials = new();
 
-    [SerializeField] private TextMeshProUGUI materialsAmount;
-
+    private void Start()
+    {
+        materials.Add("Peppermint", 1);
+        materials.Add("RockCandy", 1);
+        materials.Add("HardCandy", 1);
+        materials.Add("Licorice", 1);
+        materials.Add("Chocolate", 1);
+        materials.Add("SourTaffy", 1);
+        materials.Add("CinnamonJelly", 1);
+        materials.Add("Bubblegum", 1);
+        materials.Add("Gumdrop", 1);
+    }
     private void Update()
     {
         UpdateMaterials();
     }
 
+    public void SelectMaterial(GameObject material)
+    {
+        string materialType = material.GetComponent<MaterialScript>().candyType.ToString();
+        if(materials[materialType] > 0)
+        {
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePosition.z = 0;
+            Instantiate(material, mousePosition, Quaternion.identity);
+            materials[materialType]--;
+        }
+    }
     public void SelectUnit(GameObject unit)
     {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -36,13 +50,13 @@ public class CandyManager : MonoBehaviour
                 switch (type2)
                 {
                     case SecondaryType.Hard:
-                        Peppermint++;
+                        materials["Peppermint"]++;
                         break;
                     case SecondaryType.Soft:
-                        Licorice++;
+                        materials["Licorice"]++;
                         break;
                     case SecondaryType.Gummy:
-                        CinnamonJelly++;
+                        materials["CinnamonJelly"]++;
                         break;
                 }
                 break;
@@ -50,13 +64,13 @@ public class CandyManager : MonoBehaviour
                 switch (type2)
                 {
                     case SecondaryType.Hard:
-                        RockCandy++;
+                        materials["RockCandy"]++;
                         break;
                     case SecondaryType.Soft:
-                        Chocolate++;
+                        materials["Chocolate"]++;
                         break;
                     case SecondaryType.Gummy:
-                        Bubblegum++;
+                        materials["Bubblegum"]++;
                         break;
                 }
                 break;
@@ -64,30 +78,27 @@ public class CandyManager : MonoBehaviour
                 switch (type2)
                 {
                     case SecondaryType.Hard:
-                        HardCandy++;
+                        materials["HardCandy"]++;
                         break;
                     case SecondaryType.Soft:
-                        SourTaffy++;
+                        materials["SourTaffy"]++;
                         break;
                     case SecondaryType.Gummy:
-                        Gumdrop++;
+                        materials["Gumdrop"]++;
                         break;
                 }
                 break;
         }
     }
+
     private void UpdateMaterials()
     {
-        materialsAmount.text = "" +
-
-            "Peppermint x" + Peppermint + "\n" +
-            "Rock Candy x" + RockCandy + "\n" +
-            "Hard Candy x" + HardCandy + "\n" +
-            "Licorice x" + Licorice + "\n" +
-            "Chocolate x" + Chocolate + "\n" +
-            "Sour Taffy x" + SourTaffy + "\n" +
-            "Cinnamon Jelly x" + CinnamonJelly + "\n" +
-            "Bubblegum x" + Bubblegum + "\n" +
-            "Gumdrop x" + Gumdrop;
+        int amountIndex = 0;
+        foreach (KeyValuePair<string, int> material in materials)
+        {
+            int materialAmount = material.Value;
+            amounts[amountIndex].text = "x " + materialAmount;
+            amountIndex++;
+        }
     }
 }
