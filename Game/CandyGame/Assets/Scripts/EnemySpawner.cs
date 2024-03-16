@@ -1,3 +1,9 @@
+/**
+ * Author: Alan
+ * Contributors: Hudson Green
+ * Description: N/A
+**/
+
 using UnityEngine;
 using System.Collections;
 using System;
@@ -21,6 +27,7 @@ public class EnemySpawner : MonoBehaviour
     public float spawnInterval;
     public float waveDuration;
 
+    [NonSerialized]
     public int waveCount;
 
     private void Start()
