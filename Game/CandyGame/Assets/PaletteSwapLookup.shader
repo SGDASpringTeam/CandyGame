@@ -11,6 +11,7 @@ Shader "Hidden/PaletteSwapLookup"
     SubShader
     {
         Cull Off ZWrite Off ZTest Always
+        Blend SrcAlpha OneMinusSrcAlpha
 
         Pass
         {
@@ -46,11 +47,14 @@ Shader "Hidden/PaletteSwapLookup"
 
             fixed4 frag (v2f i) : SV_Target
             {
-                if (tex2D(_MainTex, i.uv).a != 0) {
+                if (tex2D(_MainTex, i.uv).a != 0) 
+                {
                     float x = tex2D(_MainTex, i.uv).r;
-                return tex2D(_PaletteTex, float2(x, 0));
-                } else {
-                    return tex2D(_Transparent, float2(0,0));
+                    return tex2D(_PaletteTex, float2(x, 0));
+                } 
+                else 
+                {
+                    return tex2D(_MainTex, i.uv);
                 }
             }
 
