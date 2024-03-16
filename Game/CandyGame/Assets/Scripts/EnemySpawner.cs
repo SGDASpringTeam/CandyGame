@@ -10,6 +10,7 @@ using System;
 
 public class EnemySpawner : MonoBehaviour
 {
+    // Game can be Endless, or we can have Multiple Levels
     [Header("Mode")]
     public bool isInfinite;
     public int maxNumberOfEnemies;
@@ -18,16 +19,16 @@ public class EnemySpawner : MonoBehaviour
     private float gameTime;
     private Coroutine waveRoutine;
 
+    // Which Enemy Units to Spawn, and Lane Positions
     [Header("Important Components")]
     public GameObject[] enemyUnits;
     public Transform[] spawnPositions;
 
+    // How Often Enemies Spawn, or How Long Waves Last
     [Header("Spawn Time Values")]
     public float startTime;
     public float spawnInterval;
     public float waveDuration;
-
-    [NonSerialized]
     public int waveCount;
 
     private void Start()
@@ -41,6 +42,7 @@ public class EnemySpawner : MonoBehaviour
         gameTime += Time.deltaTime;
     }
 
+    // Spawn a Random Enemy on a Random Lane
     public void StartSpawning()
     {
         InvokeRepeating(nameof(SpawnEnemies), startTime, spawnInterval);
@@ -55,9 +57,10 @@ public class EnemySpawner : MonoBehaviour
             Instantiate(enemyUnit, spawnPosition.position, Quaternion.identity);
         }
 
-        if(!isInfinite) spawnedEnemies++;
+        if(!isInfinite) spawnedEnemies++; // Level Ends when certain number of enemies spawn
     }
 
+    // Give the Player a Brief Break before Enemies spawn again
     IEnumerator SlowDownSpawning() // If isInfinite
     {
         yield return new WaitForSeconds(waveDuration);
@@ -65,7 +68,6 @@ public class EnemySpawner : MonoBehaviour
 
         // increments the wave # for every wave
         ++waveCount;
-
         StartSpawning();
     }
 }

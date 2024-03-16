@@ -1,7 +1,10 @@
 using UnityEngine;
 
+// This script represents the Player Base, not the individual player units
+
 public class PlayerScript : MonoBehaviour
 {
+    // How many hits the player base can take before Game Over
     public int totalHits;
     private int remainingHits;
 
@@ -16,6 +19,7 @@ public class PlayerScript : MonoBehaviour
         remainingHits = totalHits;
     }
 
+    // Deal Damage to Player Base. Called from EnemyUnit script
     public void TakeDamage()
     {
         if(--remainingHits <= 0)

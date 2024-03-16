@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
+    // How many Lanes are on the Grid, and How many Spaces are in each Lane
     public int lanes;
     public int spaces;
 
-    public GameObject[] playerGrid;
-    public GridTile[,] gridData;
+    public GameObject[] playerGrid; // Holds Each Lane
+    public GridTile[,] gridData; // Holds Data for Each Tile
 
+    // Populates gridData based on grid layout in game scene
     private void Start()
     {
         gridData = new GridTile[lanes, spaces];
@@ -20,6 +22,7 @@ public class GridManager : MonoBehaviour
         }
     }
 
+    // Continuously checks if a player unit is in the "Waiting Space", and if Lane can be shifted
     private void Update()
     {
         for(int l = 0; l < lanes; l++)
@@ -32,6 +35,7 @@ public class GridManager : MonoBehaviour
         }
     }
 
+    // Moves All Units in the Lane to the Right by One Space
     private void ShiftLane(int lane)
     {
         GridTile nextAvailableTile = null;
@@ -46,9 +50,9 @@ public class GridManager : MonoBehaviour
             }
         }
 
-        if(nextAvailableTile != null)
+        if (nextAvailableTile != null)
         {
-            for(int s = nextSpace - 1; s >= 0; s--)
+            for (int s = nextSpace - 1; s >= 0; s--)
             {
                 GameObject unit = gridData[lane, s].currentUnit;
                 unit.transform.position = gridData[lane, s + 1].gameObject.transform.position;

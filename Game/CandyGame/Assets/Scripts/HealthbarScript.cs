@@ -11,6 +11,7 @@ public class HealthbarScript : MonoBehaviour
         maxWidth = initialScale.x;
     }
 
+    // Update Health Bar under the Unit while making sure scale is correct
     public void UpdateHealthBar(float currentHealth, float maxHealth)
     {
         float healthRatio = currentHealth / maxHealth;

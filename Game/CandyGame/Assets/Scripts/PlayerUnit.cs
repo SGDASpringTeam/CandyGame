@@ -3,8 +3,8 @@ using System.Collections;
 
 public class PlayerUnit : MonoBehaviour
 {
-    [Header("Unit Attributes")]
-    public string moldName;
+    [Header("Unit Attributes")] // Check TypeScript to see full list of types
+    public string moldName; // moldName MUST be the same name as the UI Mold Button
     public PrimaryType type1;
     public SecondaryType type2;
     public float maxHealth;
@@ -23,6 +23,7 @@ public class PlayerUnit : MonoBehaviour
     private GameManager gameManager;
     private IEnumerator currentAttackRoutine;
 
+    // When Unit is dragged from Shop, disable properties until deployed on grid
     private void Start()
     {
         deployed = false;
@@ -34,6 +35,7 @@ public class PlayerUnit : MonoBehaviour
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
+    // Either wait for player to deploy unit, or proceed with main unit functions
     private void Update()
     {
         if (!deployed) ReadyToDeploy();
@@ -44,6 +46,7 @@ public class PlayerUnit : MonoBehaviour
         }
     }
 
+    // Give Player Unit proper type based on what the Mold was filled with
     public void SetTyping(CandyType candyType)
     {
         if (candyType == CandyType.None) return;
@@ -85,6 +88,7 @@ public class PlayerUnit : MonoBehaviour
         type2 = SecondaryType.Gummy; }
     }
 
+    // Allow player to drag and drop the Unit from the Mold to the Grid
     private void ReadyToDeploy()
     {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -114,6 +118,7 @@ public class PlayerUnit : MonoBehaviour
         }
     }
 
+    // Update Health Bar under Unit, and Kill Unit if HP goes below 0
     private void UpdateHealth()
     {
         if (currentHealth > 0) healthBar.UpdateHealthBar(currentHealth, maxHealth);
@@ -125,6 +130,7 @@ public class PlayerUnit : MonoBehaviour
         Destroy(gameObject);
     }
 
+    // Trigger an Attack based on attack speed. Also apply type damage multiplier
     private void PrepareAttack()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, 1.0f, LayerMask.GetMask("Enemies"));
@@ -151,7 +157,7 @@ public class PlayerUnit : MonoBehaviour
             yield return new WaitForSeconds(attackSpeed);
         }
 
-        if (foe != null)
+        if (foe != null) // When Player Unit Kills Enemy Unit
         {
             candyManager.ObtainMaterials(foe.type1, foe.type2);
             gameManager.UpdateEnemiesDestroyed();
@@ -160,6 +166,7 @@ public class PlayerUnit : MonoBehaviour
         currentAttackRoutine = null;
     }
 
+    // Deals More or Less Damage based on the Type Matchup
     private float TypeDamageMultiplier(EnemyUnit foe)
     {
         PrimaryType foeType1 = foe.type1;

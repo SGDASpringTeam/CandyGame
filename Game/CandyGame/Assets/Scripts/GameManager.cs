@@ -3,10 +3,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [Header("Important Components")]
-    [SerializeField] private EnemySpawner enemySpawner;
-    [SerializeField] private GameObject resultsScreen;
+    [SerializeField] private EnemySpawner enemySpawner; // Reference to Enemy Spawner
+    [SerializeField] private GameObject resultsScreen; // Reference to Win Screen
 
-    private int enemiesDestroyed;
+    private int enemiesDestroyed; // Used if Levels are NOT Endless
 
     private void Start()
     {
@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
         enemySpawner.StartSpawning();
     }
 
-    public void UpdateEnemiesDestroyed()
+    public void UpdateEnemiesDestroyed() // Used if Levels are NOT Endless
     {
         if(!enemySpawner.isInfinite && ++enemiesDestroyed == enemySpawner.maxNumberOfEnemies)
         {

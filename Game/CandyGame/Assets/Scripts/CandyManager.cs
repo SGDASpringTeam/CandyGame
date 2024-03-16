@@ -4,12 +4,12 @@ using System.Collections.Generic;
 
 public class CandyManager : MonoBehaviour
 {
-    public int startingAmount;
+    public int startingAmount; // Starting Amount For Each Material
 
-    [SerializeField] private GameObject[] buttons;
-    [SerializeField] private TextMeshProUGUI[] amounts;
+    [SerializeField] private GameObject[] buttons; // Reference to Mold Buttons
+    [SerializeField] private TextMeshProUGUI[] amounts; // Reference to UI Inventory Text
 
-    private readonly Dictionary<string, int> materials = new();
+    private readonly Dictionary<string, int> materials = new(); // Holds All Materials and their Quantity
 
     private void Start()
     {
@@ -28,6 +28,7 @@ public class CandyManager : MonoBehaviour
         UpdateMaterials();
     }
 
+    // Select Material from UI and Use Material if dragged onto Mold Button
     public void SelectMaterial(GameObject material)
     {
         string materialType = material.GetComponent<MaterialScript>().candyType.ToString();
@@ -44,6 +45,7 @@ public class CandyManager : MonoBehaviour
         materials[materialType]--;
     }
 
+    // Select Unit from UI if it is filled. Deploy Unit with Proper Typing
     public void SelectUnit(UnitButton unit)
     {
         if(unit.isFilled)
@@ -69,6 +71,7 @@ public class CandyManager : MonoBehaviour
         }
     }
 
+    // Called when an Enemy is Defeated. Material Obtained based on Enemy Type
     public void ObtainMaterials(PrimaryType type1, SecondaryType type2)
     {
         switch (type1)
@@ -118,6 +121,7 @@ public class CandyManager : MonoBehaviour
         }
     }
 
+    // Update the UI Text to show each amount of material
     private void UpdateMaterials()
     {
         int amountIndex = 0;

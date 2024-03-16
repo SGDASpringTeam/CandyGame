@@ -4,13 +4,14 @@ using System.Collections.Generic;
 
 public class MaterialScript : MonoBehaviour
 {
-    public CandyType candyType;
+    public CandyType candyType; // See TypeScript to see full list of Candy Types
 
     private void Update()
     {
         MoveMaterial();
     }
 
+    // Allow player to drag around the material and drop it into the mold
     private void MoveMaterial()
     {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);

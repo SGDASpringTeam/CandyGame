@@ -6308,6 +6308,7 @@ MonoBehaviour:
   - {fileID: 1485451372}
   - {fileID: 786098822}
   - {fileID: 1371363575}
+  shiftSpeed: 200
 --- !u!1 &1570379165
 GameObject:
   m_ObjectHideFlags: 0

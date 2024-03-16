@@ -1,5 +1,8 @@
 using UnityEngine;
 
+// This script is meant to hold the different Types
+// Read below to see type matchups, and what two types make up each material
+
 public enum PrimaryType
 {
     Spicy,
