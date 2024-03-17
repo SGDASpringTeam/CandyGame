@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class PlayerUnit : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class PlayerUnit : MonoBehaviour
     [SerializeField] private HealthbarScript healthBar;
 
     // Important Variables for this Script
-    private bool deployed;
+    [NonSerialized] public bool deployed;
     private BoxCollider2D hitbox;
     private GridTile placedTile;
     private CandyManager candyManager;
