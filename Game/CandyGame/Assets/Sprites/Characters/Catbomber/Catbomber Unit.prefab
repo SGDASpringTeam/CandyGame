@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3013586410326570999}
   - component: {fileID: 6027703163097850206}
   - component: {fileID: 1519012965136691518}
+  - component: {fileID: 8888333795494518883}
   m_Layer: 7
   m_Name: Catbomber Unit
   m_TagString: Player Unit
@@ -55,6 +56,7 @@ MonoBehaviour:
   currentHealth: 15
   attackDamage: 7
   attackSpeed: 0.3
+  unitAnimator: {fileID: 8888333795494518883}
   healthBar: {fileID: 442342580238285000}
 --- !u!212 &3013586410326570999
 SpriteRenderer:
@@ -178,6 +180,27 @@ MonoBehaviour:
   textureID: 0
   playerUnit: {fileID: 8369666133464989586}
   paletteSet: 0
+--- !u!95 &8888333795494518883
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064468184679015467}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8be60d6546d70554d8e5064bce961541, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &826718949076326691
 PrefabInstance:
   m_ObjectHideFlags: 0

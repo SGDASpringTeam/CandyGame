@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1513670131553108519}
   - component: {fileID: 7765898346580489701}
   - component: {fileID: 7396342467864125286}
+  - component: {fileID: 329270657636887314}
   m_Layer: 7
   m_Name: Musketeer Unit
   m_TagString: Player Unit
@@ -55,6 +56,7 @@ MonoBehaviour:
   currentHealth: 12
   attackDamage: 6
   attackSpeed: 2
+  unitAnimator: {fileID: 329270657636887314}
   healthBar: {fileID: 483238754544019535}
 --- !u!212 &1513670131553108519
 SpriteRenderer:
@@ -178,6 +180,27 @@ MonoBehaviour:
   textureID: 0
   playerUnit: {fileID: 8553436794804482625}
   paletteSet: 0
+--- !u!95 &329270657636887314
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6344117560852732053}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4143f1db6ff953b4893e211b36bf8594, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &859716580943776164
 PrefabInstance:
   m_ObjectHideFlags: 0

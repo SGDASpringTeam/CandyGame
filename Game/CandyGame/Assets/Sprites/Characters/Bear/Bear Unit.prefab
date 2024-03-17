@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 844300115082116179}
   - component: {fileID: 1168447545905310438}
   - component: {fileID: 8099780393693521938}
+  - component: {fileID: 7105560267128609063}
   m_Layer: 7
   m_Name: Bear Unit
   m_TagString: Player Unit
@@ -55,6 +56,7 @@ MonoBehaviour:
   currentHealth: 20
   attackDamage: 5
   attackSpeed: 0.5
+  unitAnimator: {fileID: 7105560267128609063}
   healthBar: {fileID: 2113960896494892393}
 --- !u!212 &844300115082116179
 SpriteRenderer:
@@ -178,6 +180,27 @@ MonoBehaviour:
   textureID: 0
   playerUnit: {fileID: 5097421003367256865}
   paletteSet: 0
+--- !u!95 &7105560267128609063
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4727873187313143740}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c69e4fd061156ee4c8ce7565321bb01a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1156528480758944898
 PrefabInstance:
   m_ObjectHideFlags: 0

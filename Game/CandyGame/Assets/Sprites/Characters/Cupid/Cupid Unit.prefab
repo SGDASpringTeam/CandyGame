@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7500975474866987402}
   - component: {fileID: 7973082058985699975}
   - component: {fileID: 838110659461912270}
+  - component: {fileID: 3640651964440822057}
   m_Layer: 7
   m_Name: Cupid Unit
   m_TagString: Player Unit
@@ -107,6 +108,7 @@ MonoBehaviour:
   currentHealth: 12
   attackDamage: 3
   attackSpeed: 1
+  unitAnimator: {fileID: 3640651964440822057}
   healthBar: {fileID: 7773669016166209363}
 --- !u!61 &7973082058985699975
 BoxCollider2D:
@@ -178,6 +180,27 @@ MonoBehaviour:
   textureID: 0
   playerUnit: {fileID: 7500975474866987402}
   paletteSet: 0
+--- !u!95 &3640651964440822057
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44903561806727420}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8d2e461ec0618514f8d24ae020b8be11, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &7402513102017312440
 PrefabInstance:
   m_ObjectHideFlags: 0

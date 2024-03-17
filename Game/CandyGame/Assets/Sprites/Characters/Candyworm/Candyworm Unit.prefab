@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2227116010191824459}
   - component: {fileID: 4856412219171483270}
   - component: {fileID: -6681310117465707768}
+  - component: {fileID: 1917003331653754237}
   m_Layer: 7
   m_Name: Candyworm Unit
   m_TagString: Player Unit
@@ -49,12 +50,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moldName: Candyworm
-  type1: 0
-  type2: 1
+  type1: 2
+  type2: 2
   maxHealth: 5
   currentHealth: 5
   attackDamage: 20
   attackSpeed: 0.2
+  unitAnimator: {fileID: 1917003331653754237}
   healthBar: {fileID: 4515863283242562409}
 --- !u!212 &2227116010191824459
 SpriteRenderer:
@@ -178,6 +180,27 @@ MonoBehaviour:
   textureID: 0
   playerUnit: {fileID: 1521778547146265190}
   paletteSet: 0
+--- !u!95 &1917003331653754237
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732941041221750142}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 388e735c0daa19d49b2e28dfc57d1e2a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &3742787060163957378
 PrefabInstance:
   m_ObjectHideFlags: 0

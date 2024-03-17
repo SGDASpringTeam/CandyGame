@@ -13,6 +13,8 @@ public class PlayerUnit : MonoBehaviour
     public float currentHealth;
     public float attackDamage;
     public float attackSpeed;
+    
+    public Animator unitAnimator;
 
     [Header("Important Components")]
     [SerializeField] private HealthbarScript healthBar;
@@ -153,7 +155,7 @@ public class PlayerUnit : MonoBehaviour
     {
         while (foe != null && foe.currentHealth > 0)
         {
-            //animator.SetTrigger("Attack");
+            unitAnimator.SetTrigger("Attacking");
             foe.currentHealth -= attackDamage * TypeDamageMultiplier(foe);
             //Debug.Log("Dealt " + attackDamage * TypeDamageMultiplier(foe) + " damage to " + foe.gameObject.name + "!");
             yield return new WaitForSeconds(attackSpeed);
