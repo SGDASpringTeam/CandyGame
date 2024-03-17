@@ -14,7 +14,7 @@ public class PlayerScript : MonoBehaviour
     private void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        resultsScreen = GameObject.Find("Results Screen").transform.Find("You Lose...").gameObject;
+        resultsScreen = GameObject.Find("Results Screen");
 
         remainingHits = totalHits;
     }
