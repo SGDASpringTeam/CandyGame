@@ -4,7 +4,7 @@ public class GameManager : MonoBehaviour
 {
     [Header("Important Components")]
     [SerializeField] private EnemySpawner enemySpawner; // Reference to Enemy Spawner
-    [SerializeField] private GameObject resultsScreen; // Reference to Win Screen
+    [SerializeField] private GameObject resultsScreen; // Reference to Game Over Screen
 
     private int enemiesDestroyed; // Used if Levels are NOT Endless
 
