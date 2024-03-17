@@ -63,6 +63,7 @@ public class EnemyUnit : MonoBehaviour
             currentAttackRoutine = TriggerAttack(foe);
             StartCoroutine(currentAttackRoutine);
             isAttacking = true;
+            animator.SetTrigger("Attacking");
         }
     }
     IEnumerator TriggerAttack(PlayerUnit foe)
@@ -76,7 +77,6 @@ public class EnemyUnit : MonoBehaviour
         }
 
         isAttacking = false;
-        animator.SetTrigger("Move");
         currentAttackRoutine = null;
     }
 
