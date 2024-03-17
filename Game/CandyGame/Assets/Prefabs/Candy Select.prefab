@@ -591,7 +591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df636b8ea3faf14db17c15830df3e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnitPrefab: {fileID: 0}
+  UnitPrefab: {fileID: 44903561806727420, guid: bada2f66fd6d6154aac142f3a45e6b1e, type: 3}
   isFilled: 0
   filledCandy: 0
 --- !u!114 &1942932032674110102
@@ -985,7 +985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df636b8ea3faf14db17c15830df3e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnitPrefab: {fileID: 0}
+  UnitPrefab: {fileID: 5612594573719884149, guid: 7df51c4aacd014846805d882c1e342fd, type: 3}
   isFilled: 0
   filledCandy: 0
 --- !u!114 &3245738262177878749
@@ -3779,7 +3779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df636b8ea3faf14db17c15830df3e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnitPrefab: {fileID: 0}
+  UnitPrefab: {fileID: 1732941041221750142, guid: fcea48513cb8c574cb8e6b5dcf4ebd36, type: 3}
   isFilled: 0
   filledCandy: 0
 --- !u!114 &4420596231047030589
@@ -4137,7 +4137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df636b8ea3faf14db17c15830df3e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnitPrefab: {fileID: 0}
+  UnitPrefab: {fileID: 6344117560852732053, guid: 04450ccaf3753ec45a620573460b729f, type: 3}
   isFilled: 0
   filledCandy: 0
 --- !u!114 &1609944538636047210
@@ -5373,7 +5373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df636b8ea3faf14db17c15830df3e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnitPrefab: {fileID: 0}
+  UnitPrefab: {fileID: 4727873187313143740, guid: fc43d270d969a474db007fbd68ba391a, type: 3}
   isFilled: 0
   filledCandy: 0
 --- !u!114 &6194928894644514583
@@ -6204,7 +6204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df636b8ea3faf14db17c15830df3e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnitPrefab: {fileID: 0}
+  UnitPrefab: {fileID: 1349083083103029115, guid: 9bc9c0b117527a34087ba78c0d4c937f, type: 3}
   isFilled: 0
   filledCandy: 0
 --- !u!114 &8664202149129509812
@@ -6600,7 +6600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df636b8ea3faf14db17c15830df3e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnitPrefab: {fileID: 0}
+  UnitPrefab: {fileID: 8064468184679015467, guid: 8a4c70c522f7f9042988c40885dc1d1b, type: 3}
   isFilled: 0
   filledCandy: 0
 --- !u!114 &5798789653626253706
