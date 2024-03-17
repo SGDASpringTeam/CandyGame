@@ -13,8 +13,6 @@ public class PlayerUnit : MonoBehaviour
     public float currentHealth;
     public float attackDamage;
     public float attackSpeed;
-    
-    public Animator unitAnimator;
 
     [Header("Important Components")]
     [SerializeField] private HealthbarScript healthBar;
@@ -25,6 +23,7 @@ public class PlayerUnit : MonoBehaviour
     private GridTile placedTile;
     private CandyManager candyManager;
     private GameManager gameManager;
+    private Animator unitAnimator;
     private IEnumerator currentAttackRoutine;
 
     // When Unit is dragged from Shop, disable properties until deployed on grid
@@ -37,6 +36,9 @@ public class PlayerUnit : MonoBehaviour
 
         candyManager = GameObject.Find("Candy Select").GetComponent<CandyManager>();
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+
+        unitAnimator = GetComponent<Animator>();
+        unitAnimator.speed = 0;
     }
 
     // Either wait for player to deploy unit, or proceed with main unit functions
@@ -114,6 +116,7 @@ public class PlayerUnit : MonoBehaviour
                         hitbox.enabled = true;
                         transform.position = hit.collider.gameObject.transform.position;
                         candyManager.DeployUnit(moldName);
+                        unitAnimator.speed = 1;
                         return;
                     }
                 }
