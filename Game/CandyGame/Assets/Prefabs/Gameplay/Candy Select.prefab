@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 1942932032674110102}
   m_Layer: 5
   m_Name: Cupid
-  m_TagString: Untagged
+  m_TagString: Mold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -864,7 +864,7 @@ GameObject:
   - component: {fileID: 3245738262177878749}
   m_Layer: 5
   m_Name: Monster
-  m_TagString: Untagged
+  m_TagString: Mold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1848,7 +1848,7 @@ MonoBehaviour:
           m_MethodName: SelectMaterial
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 1397922657030794877, guid: fae74658e9fb31346ae799a50f2d0070, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -2360,7 +2360,7 @@ MonoBehaviour:
           m_MethodName: SelectMaterial
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 3303963047235209535, guid: 88cc0a9821c973b48b1aa73773af0be0, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -2512,7 +2512,7 @@ MonoBehaviour:
           m_MethodName: SelectMaterial
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 4917575392940374537, guid: ea1d287c32d4f0340b4fc6f7c7e6c4ea, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -3658,7 +3658,7 @@ GameObject:
   - component: {fileID: 4420596231047030589}
   m_Layer: 5
   m_Name: Candyworm
-  m_TagString: Untagged
+  m_TagString: Mold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3956,7 +3956,7 @@ MonoBehaviour:
           m_MethodName: SelectMaterial
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 9152793374757067620, guid: 1e9519b9616e4a1428a569ab867db2f6, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -4016,7 +4016,7 @@ GameObject:
   - component: {fileID: 1609944538636047210}
   m_Layer: 5
   m_Name: Musketeer
-  m_TagString: Untagged
+  m_TagString: Mold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4314,7 +4314,7 @@ MonoBehaviour:
           m_MethodName: SelectMaterial
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 2494612730240660735, guid: 23bf4d639b31cb046925827bb74f40a4, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -4675,7 +4675,7 @@ MonoBehaviour:
           m_MethodName: SelectMaterial
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 697450861063034112, guid: 1ecb397dcbb3f6e42b030a1ce0d01531, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -4731,7 +4731,7 @@ Canvas:
   m_GameObject: {fileID: 5702964278618438241}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -4743,7 +4743,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_TargetDisplay: 0
 --- !u!114 &3475411959103868857
 MonoBehaviour:
@@ -5229,7 +5229,7 @@ MonoBehaviour:
           m_MethodName: SelectMaterial
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 5528605799045083942, guid: d62fe7b351920484ebbbff0e96363ee4, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -5252,7 +5252,7 @@ GameObject:
   - component: {fileID: 6194928894644514583}
   m_Layer: 5
   m_Name: Bear
-  m_TagString: Untagged
+  m_TagString: Mold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6083,7 +6083,7 @@ GameObject:
   - component: {fileID: 8664202149129509812}
   m_Layer: 5
   m_Name: Candyman
-  m_TagString: Untagged
+  m_TagString: Mold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6456,7 +6456,7 @@ MonoBehaviour:
           m_MethodName: SelectMaterial
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 9009602447654251607, guid: bef2d7418ce50dc4aaf9be84aabde676, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -6479,7 +6479,7 @@ GameObject:
   - component: {fileID: 5798789653626253706}
   m_Layer: 5
   m_Name: Catbomber
-  m_TagString: Untagged
+  m_TagString: Mold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7329,7 +7329,7 @@ MonoBehaviour:
           m_MethodName: SelectMaterial
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 1479627437872214383, guid: 36a74d8ffd433ce4fb660652a64abb0e, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
