@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8676699830516520799}
   - component: {fileID: 7500975474866987402}
   - component: {fileID: 7973082058985699975}
+  - component: {fileID: 838110659461912270}
   m_Layer: 7
   m_Name: Cupid Unit
   m_TagString: Player Unit
@@ -152,6 +153,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &838110659461912270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44903561806727420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LookupTexture:
+  - {fileID: 2800000, guid: 2e324bd9235dcc1419cc739265cf317e, type: 3}
+  - {fileID: 2800000, guid: 1419025bbed18f54093a7433c394e6a3, type: 3}
+  - {fileID: 2800000, guid: a2651bd91f7bafe4794c24fc0622d702, type: 3}
+  - {fileID: 2800000, guid: 935cf4f6d1f541b4a867c076d0b116e7, type: 3}
+  - {fileID: 2800000, guid: 7440a7cbbf924c347a61cc00022e2880, type: 3}
+  - {fileID: 2800000, guid: 772b690a1fc5c544c993d33537d4f375, type: 3}
+  - {fileID: 2800000, guid: 667f878e24f0d57408c79cf2ba562c93, type: 3}
+  - {fileID: 2800000, guid: d86cf4b0378ee484dbb606f2d65a22bd, type: 3}
+  - {fileID: 2800000, guid: 7077da44acfa3f342b53f1e97736af58, type: 3}
+  textureID: 0
+  playerUnit: {fileID: 7500975474866987402}
+  paletteSet: 0
 --- !u!1001 &7402513102017312440
 PrefabInstance:
   m_ObjectHideFlags: 0

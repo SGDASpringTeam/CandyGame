@@ -12,6 +12,7 @@ Shader "Hidden/PaletteSwapLookup"
     {
         Cull Off ZWrite Off ZTest Always
         Blend SrcAlpha OneMinusSrcAlpha
+        Tags { "Queue" = "Overlay" }
 
         Pass
         {
