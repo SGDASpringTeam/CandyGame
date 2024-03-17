@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System;
 
+[RequireComponent(typeof(BoxCollider2D))]
 public class PlayerUnit : MonoBehaviour
 {
     [Header("Unit Attributes")] // Check TypeScript to see full list of types

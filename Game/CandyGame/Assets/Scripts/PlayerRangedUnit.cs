@@ -18,8 +18,11 @@ public class PlayerRangedUnit : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab = null;
 
     [Header("Bullet Properties")]
+    [Tooltip("Amount of damage bullet should do")]
     [SerializeField] private float rangedDamage = 1.0f;
+    [Tooltip("Distance in units bullet can travel before it is killed")]
     [SerializeField] private float range = 5.0f;
+    [Tooltip("Speed of bullet in no particular unit of speed")]
     [SerializeField] private float bulletSpeed = 5.0f;
     [Tooltip("Amount of enemies the bullet can hit before being killed (how many enemies can it pass thru?")]
     [SerializeField] private int hitsUntilDespawn = 1;
