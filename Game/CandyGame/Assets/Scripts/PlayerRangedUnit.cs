@@ -25,8 +25,10 @@ public class PlayerRangedUnit : MonoBehaviour
     [SerializeField] private int hitsUntilDespawn = 1;
 
     [Header("Gun Properties")]
-    [SerializeField] private float rateOfFire = 1.0f;
-    
+    [Tooltip("Rate of fire in rounds per minute (RPM) (60 RPM = 1 shot per second)")]
+    [SerializeField] private float rateOfFire = 60.0f;
+
+    private float timeSinceLastShot = 0.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -43,5 +45,35 @@ public class PlayerRangedUnit : MonoBehaviour
         // Guard against unit not being deployed yet
         if (!pUnit.deployed) return;
 
+        // Increase time since last shot by frametime
+        timeSinceLastShot += Time.deltaTime;
+
+        // Spawn bullet given rate of fire
+        if(timeSinceLastShot > (1.0f / rateOfFire) * 60.0f)
+        {
+
+            // Spawn bullet
+            SpawnBullet(transform.position);
+
+        }
+
     }
+
+    private void SpawnBullet(Vector3 spawnLocation)
+    {
+
+        // Guard against missing bullet prefab specified
+        if (bulletPrefab == null) return;
+
+        // Generate the bullet GameObject from prefab
+        GameObject bullet = Instantiate(bulletPrefab, spawnLocation, Quaternion.identity);
+
+        // Give bullet its properties
+        bullet.GetComponent<PlayerBullet>().rangedDamage = rangedDamage;
+        bullet.GetComponent<PlayerBullet>().range = range;
+        bullet.GetComponent<PlayerBullet>().bulletSpeed = bulletSpeed;
+        bullet.GetComponent<PlayerBullet>().hitsUntilDespawn = hitsUntilDespawn;
+
+    }
+
 }

@@ -12,7 +12,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(CircleCollider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
-public class Bullet : MonoBehaviour
+public class PlayerBullet : MonoBehaviour
 {
 
     [NonSerialized] public float rangedDamage = 1.0f;
@@ -48,4 +48,5 @@ public class Bullet : MonoBehaviour
         );
 
     }
+
 }
