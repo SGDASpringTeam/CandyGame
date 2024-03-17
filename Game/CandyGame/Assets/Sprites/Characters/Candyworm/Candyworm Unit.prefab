@@ -48,8 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moldName: Candyworm
-  type1: 1
-  type2: 2
+  type1: 0
+  type2: 1
   maxHealth: 5
   currentHealth: 5
   attackDamage: 20
@@ -95,7 +95,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1062708020, guid: 06684e885fd46154e9a371089dd7e86b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

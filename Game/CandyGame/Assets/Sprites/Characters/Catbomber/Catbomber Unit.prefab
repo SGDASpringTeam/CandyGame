@@ -48,8 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moldName: Catbomber
-  type1: 0
-  type2: 2
+  type1: 2
+  type2: 1
   maxHealth: 15
   currentHealth: 15
   attackDamage: 7
@@ -95,7 +95,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 718100318, guid: 2ee0253ebb037fe43a45eed5e2a5a767, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -48,8 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moldName: Musketeer
-  type1: 2
-  type2: 0
+  type1: 1
+  type2: 1
   maxHealth: 12
   currentHealth: 12
   attackDamage: 6
@@ -95,7 +95,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1381900755, guid: fb9b98b3c61b8de40bab67ca44908520, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
