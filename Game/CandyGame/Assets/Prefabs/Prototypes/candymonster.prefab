@@ -346,7 +346,6 @@ GameObject:
   m_Component:
   - component: {fileID: 990138580598262469}
   - component: {fileID: 6949602996966743552}
-  - component: {fileID: 3148882038506748751}
   m_Layer: 3
   m_Name: Sprite
   m_TagString: Untagged
@@ -421,27 +420,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3148882038506748751
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4379827581501998742}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e6c42e64fd0fc0043befee3ccb4207ac, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4466802835688702277
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +511,7 @@ MonoBehaviour:
   attackDamage: 2
   attackSpeed: 0.2
   moveSpeed: 1
-  animator: {fileID: 3148882038506748751}
+  animator: {fileID: 0}
   healthBar: {fileID: 527793464307681375}
 --- !u!61 &5492962818081887842
 BoxCollider2D:
