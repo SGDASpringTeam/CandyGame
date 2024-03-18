@@ -53,7 +53,7 @@ MonoBehaviour:
   type1: 2
   type2: 0
   maxHealth: 15
-  currentHealth: 10
+  currentHealth: 15
   attackDamage: 2
   attackSpeed: 0.25
   isRanged: 0
