@@ -347,6 +347,8 @@ MonoBehaviour:
   moveSpeed: 0.5
   animator: {fileID: 5174215937562678384}
   healthBar: {fileID: 8873685742932010782}
+  _enemyAttackSound: {fileID: 8300000, guid: 7d3335e60641c4369b216da246ca8927, type: 3}
+  _enemyAttackSoundVolume: 1
 --- !u!212 &984510609510756009
 SpriteRenderer:
   m_ObjectHideFlags: 0

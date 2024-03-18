@@ -56,8 +56,17 @@ MonoBehaviour:
   currentHealth: 5
   attackDamage: 20
   attackSpeed: 0.2
-  unitAnimator: {fileID: 1917003331653754237}
   healthBar: {fileID: 4515863283242562409}
+  _unitPlaceSound: {fileID: 8300000, guid: 38a4c21a1927c4a5d9611c9f90fe86bb, type: 3}
+  _unitPlaceSoundVolume: 1
+  _unitDeathSound: {fileID: 8300000, guid: 01120e656759f4013bb27325ea5b0efe, type: 3}
+  _unitDeathSoundVolume: 1
+  _unitAttackSound: {fileID: 8300000, guid: c963cf9c00c084bcc8914620ae9f481c, type: 3}
+  _unitAttackSoundVolume: 1
+  _enemyDeathSound: {fileID: 8300000, guid: 960fcb87b315a4017b2383518ba787b7, type: 3}
+  _enemyDeathSoundVolume: 1
+  _moldBreak: {fileID: 8300000, guid: 91d9dd0afc0b14dd8b8a8e8d344fa023, type: 3}
+  _moldBreakVolume: 1
 --- !u!212 &2227116010191824459
 SpriteRenderer:
   m_ObjectHideFlags: 0
