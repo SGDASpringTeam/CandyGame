@@ -154,7 +154,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 1419025bbed18f54093a7433c394e6a3, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &18026881
 Animator:
   serializedVersion: 5
@@ -274,7 +280,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: d86cf4b0378ee484dbb606f2d65a22bd, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &30974905
 Animator:
   serializedVersion: 5
@@ -394,7 +406,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7440a7cbbf924c347a61cc00022e2880, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &49882739
 Animator:
   serializedVersion: 5
@@ -719,7 +737,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: a2651bd91f7bafe4794c24fc0622d702, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!21 &139731743
 Material:
   serializedVersion: 8
@@ -790,7 +814,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 667f878e24f0d57408c79cf2ba562c93, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &175434869
 Animator:
   serializedVersion: 5
@@ -988,7 +1018,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7440a7cbbf924c347a61cc00022e2880, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &197841025
 Animator:
   serializedVersion: 5
@@ -1108,7 +1144,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7077da44acfa3f342b53f1e97736af58, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &199801374
 Animator:
   serializedVersion: 5
@@ -1345,7 +1387,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 772b690a1fc5c544c993d33537d4f375, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &270868288
 Animator:
   serializedVersion: 5
@@ -1621,7 +1669,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7440a7cbbf924c347a61cc00022e2880, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &331762068
 Animator:
   serializedVersion: 5
@@ -1740,7 +1794,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 935cf4f6d1f541b4a867c076d0b116e7, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!212 &340384580
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1878,7 +1938,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7077da44acfa3f342b53f1e97736af58, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &346555448
 Animator:
   serializedVersion: 5
@@ -2037,7 +2103,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: d86cf4b0378ee484dbb606f2d65a22bd, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &405971387
 Animator:
   serializedVersion: 5
@@ -2196,7 +2268,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: a2651bd91f7bafe4794c24fc0622d702, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &425908064
 Animator:
   serializedVersion: 5
@@ -2394,7 +2472,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: d86cf4b0378ee484dbb606f2d65a22bd, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &564885117
 Animator:
   serializedVersion: 5
@@ -2592,7 +2676,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: d86cf4b0378ee484dbb606f2d65a22bd, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &596702942
 Animator:
   serializedVersion: 5
@@ -2790,7 +2880,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 1419025bbed18f54093a7433c394e6a3, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &674865392
 Animator:
   serializedVersion: 5
@@ -3144,7 +3240,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 2e324bd9235dcc1419cc739265cf317e, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &768870902
 Animator:
   serializedVersion: 5
@@ -3264,7 +3366,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 667f878e24f0d57408c79cf2ba562c93, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &776307938
 Animator:
   serializedVersion: 5
@@ -3384,7 +3492,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 772b690a1fc5c544c993d33537d4f375, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &781875415
 Animator:
   serializedVersion: 5
@@ -3635,7 +3749,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: d86cf4b0378ee484dbb606f2d65a22bd, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &802883765
 Animator:
   serializedVersion: 5
@@ -3755,7 +3875,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 1419025bbed18f54093a7433c394e6a3, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &828119360
 Animator:
   serializedVersion: 5
@@ -3913,7 +4039,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 2e324bd9235dcc1419cc739265cf317e, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!212 &832838675
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4012,7 +4144,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7440a7cbbf924c347a61cc00022e2880, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &869625420
 Animator:
   serializedVersion: 5
@@ -4132,7 +4270,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 935cf4f6d1f541b4a867c076d0b116e7, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &884415380
 Animator:
   serializedVersion: 5
@@ -4252,7 +4396,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: d86cf4b0378ee484dbb606f2d65a22bd, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &886430525
 Animator:
   serializedVersion: 5
@@ -4460,7 +4610,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: a2651bd91f7bafe4794c24fc0622d702, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!1 &912704658
 GameObject:
   m_ObjectHideFlags: 0
@@ -4492,7 +4648,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7077da44acfa3f342b53f1e97736af58, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &912704660
 Animator:
   serializedVersion: 5
@@ -4611,7 +4773,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: a2651bd91f7bafe4794c24fc0622d702, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!212 &920429667
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4710,7 +4878,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 2e324bd9235dcc1419cc739265cf317e, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &954408685
 Animator:
   serializedVersion: 5
@@ -4957,7 +5131,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: a2651bd91f7bafe4794c24fc0622d702, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!1 &990288028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4989,7 +5169,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 667f878e24f0d57408c79cf2ba562c93, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &990288030
 Animator:
   serializedVersion: 5
@@ -5109,7 +5295,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 935cf4f6d1f541b4a867c076d0b116e7, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1001190359
 Animator:
   serializedVersion: 5
@@ -5229,7 +5421,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 2e324bd9235dcc1419cc739265cf317e, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1001533438
 Animator:
   serializedVersion: 5
@@ -5427,7 +5625,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 667f878e24f0d57408c79cf2ba562c93, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1045954995
 Animator:
   serializedVersion: 5
@@ -5547,7 +5751,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: d86cf4b0378ee484dbb606f2d65a22bd, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1052560109
 Animator:
   serializedVersion: 5
@@ -5706,7 +5916,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 2e324bd9235dcc1419cc739265cf317e, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1058657708
 Animator:
   serializedVersion: 5
@@ -5865,7 +6081,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7440a7cbbf924c347a61cc00022e2880, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1100045805
 Animator:
   serializedVersion: 5
@@ -6205,7 +6427,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 2e324bd9235dcc1419cc739265cf317e, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1206100046
 Animator:
   serializedVersion: 5
@@ -6364,7 +6592,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 1419025bbed18f54093a7433c394e6a3, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1225843968
 Animator:
   serializedVersion: 5
@@ -6601,7 +6835,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 772b690a1fc5c544c993d33537d4f375, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1261042543
 Animator:
   serializedVersion: 5
@@ -6838,7 +7078,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 1419025bbed18f54093a7433c394e6a3, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1289174091
 Animator:
   serializedVersion: 5
@@ -6958,7 +7204,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7077da44acfa3f342b53f1e97736af58, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1290965597
 Animator:
   serializedVersion: 5
@@ -7116,7 +7368,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 772b690a1fc5c544c993d33537d4f375, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!212 &1351187930
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7215,7 +7473,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 935cf4f6d1f541b4a867c076d0b116e7, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1351798662
 Animator:
   serializedVersion: 5
@@ -7374,7 +7638,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 772b690a1fc5c544c993d33537d4f375, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1377215774
 Animator:
   serializedVersion: 5
@@ -7493,7 +7763,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7077da44acfa3f342b53f1e97736af58, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!212 &1399005952
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7631,7 +7907,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 667f878e24f0d57408c79cf2ba562c93, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1436371563
 Animator:
   serializedVersion: 5
@@ -7751,7 +8033,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 2e324bd9235dcc1419cc739265cf317e, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1437383943
 Animator:
   serializedVersion: 5
@@ -7949,7 +8237,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7077da44acfa3f342b53f1e97736af58, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1454767156
 Animator:
   serializedVersion: 5
@@ -8068,7 +8362,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7440a7cbbf924c347a61cc00022e2880, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!212 &1459748027
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8245,7 +8545,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 935cf4f6d1f541b4a867c076d0b116e7, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1499268982
 Animator:
   serializedVersion: 5
@@ -8537,7 +8843,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7077da44acfa3f342b53f1e97736af58, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1551827590
 Animator:
   serializedVersion: 5
@@ -8823,7 +9135,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: a2651bd91f7bafe4794c24fc0622d702, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!21 &1640638671
 Material:
   serializedVersion: 8
@@ -8982,7 +9300,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: a2651bd91f7bafe4794c24fc0622d702, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!1 &1681875015
 GameObject:
   m_ObjectHideFlags: 0
@@ -9014,7 +9338,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 772b690a1fc5c544c993d33537d4f375, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1681875017
 Animator:
   serializedVersion: 5
@@ -9142,6 +9472,90 @@ Material:
     m_Floats: []
     m_Colors: []
   m_BuildTextureStacks: []
+--- !u!1 &1686120130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1686120132}
+  - component: {fileID: 1686120131}
+  m_Layer: 0
+  m_Name: Square
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1686120131
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686120130}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1686120132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686120130}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 207.84012, y: -43.74575, z: 1.6781086}
+  m_LocalScale: {x: 1000, y: 1000, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1696563627
 GameObject:
   m_ObjectHideFlags: 0
@@ -9173,7 +9587,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 935cf4f6d1f541b4a867c076d0b116e7, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1696563629
 Animator:
   serializedVersion: 5
@@ -9332,7 +9752,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 772b690a1fc5c544c993d33537d4f375, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1714860885
 Animator:
   serializedVersion: 5
@@ -9530,7 +9956,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 667f878e24f0d57408c79cf2ba562c93, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1785138282
 Animator:
   serializedVersion: 5
@@ -9806,7 +10238,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7440a7cbbf924c347a61cc00022e2880, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1836659895
 Animator:
   serializedVersion: 5
@@ -9925,7 +10363,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 667f878e24f0d57408c79cf2ba562c93, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!212 &1837870292
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10190,7 +10634,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: a2651bd91f7bafe4794c24fc0622d702, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!1 &1859286343
 GameObject:
   m_ObjectHideFlags: 0
@@ -10222,7 +10672,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 667f878e24f0d57408c79cf2ba562c93, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1859286345
 Animator:
   serializedVersion: 5
@@ -10341,7 +10797,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 1419025bbed18f54093a7433c394e6a3, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!212 &1873451103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10518,7 +10980,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 1419025bbed18f54093a7433c394e6a3, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1935963263
 Animator:
   serializedVersion: 5
@@ -10638,7 +11106,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7440a7cbbf924c347a61cc00022e2880, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1936345834
 Animator:
   serializedVersion: 5
@@ -10758,7 +11232,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 2e324bd9235dcc1419cc739265cf317e, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1963631092
 Animator:
   serializedVersion: 5
@@ -10917,7 +11397,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 7077da44acfa3f342b53f1e97736af58, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1983235010
 Animator:
   serializedVersion: 5
@@ -11037,7 +11523,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 1419025bbed18f54093a7433c394e6a3, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1987104226
 Animator:
   serializedVersion: 5
@@ -11157,7 +11649,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 935cf4f6d1f541b4a867c076d0b116e7, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &1998903137
 Animator:
   serializedVersion: 5
@@ -11355,7 +11853,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 935cf4f6d1f541b4a867c076d0b116e7, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &2087891042
 Animator:
   serializedVersion: 5
@@ -11474,7 +11978,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: d86cf4b0378ee484dbb606f2d65a22bd, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!212 &2099223044
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11573,7 +12083,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e955d62cb90841b2caddabd2d4701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: 772b690a1fc5c544c993d33537d4f375, type: 3}
+  LookupTexture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textureID: 0
+  playerUnit: {fileID: 0}
+  paletteSet: 0
 --- !u!95 &2107643774
 Animator:
   serializedVersion: 5
@@ -11669,3 +12185,4 @@ SceneRoots:
   - {fileID: 799303866}
   - {fileID: 1508174226}
   - {fileID: 1162572408}
+  - {fileID: 1686120132}
