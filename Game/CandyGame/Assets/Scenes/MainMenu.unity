@@ -2034,9 +2034,6 @@ MonoBehaviour:
   - {fileID: 2800000, guid: a8f2c6572dc38dd488a627349d849eb2, type: 3}
   - {fileID: 2800000, guid: 6b6788ec2b43e784d87985a16e550b74, type: 3}
   - {fileID: 2800000, guid: 1f86b6824089b354f95242eeada98bbe, type: 3}
-  - {fileID: 2800000, guid: 6a6f0bbd9209e33478db7a5f134e128e, type: 3}
-  - {fileID: 2800000, guid: 15b4c4c21dfa88e45bed50c319a21c7c, type: 3}
-  - {fileID: 2800000, guid: 4152e391c5492d646af31e6afc837a57, type: 3}
 --- !u!81 &720962763
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2241,7 +2238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SUGAR SEIGE
+  m_text: SUGAR SIEGE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}

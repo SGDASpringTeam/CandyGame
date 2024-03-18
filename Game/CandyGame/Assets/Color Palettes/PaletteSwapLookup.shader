@@ -48,7 +48,7 @@ Shader "Hidden/PaletteSwapLookup"
 
             fixed4 frag (v2f i) : SV_Target
             {
-                if(tex2D(_MainTex, i.uv).r == tex2D(_MainTex, i.uv).b && tex2D(_MainTex, i.uv).b == tex2D(_MainTex, i.uv).g)
+                if((tex2D(_MainTex, i.uv).r == tex2D(_MainTex, i.uv).b && tex2D(_MainTex, i.uv).b == tex2D(_MainTex, i.uv).g))
                 {
                     if (tex2D(_MainTex, i.uv).a != 0) 
                     {
