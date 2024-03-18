@@ -24,6 +24,8 @@ public class PlayerRangedUnit : MonoBehaviour
     [Tooltip("Rate of fire in rounds per minute (RPM) (60 RPM = 1 shot per second)")]
     [SerializeField] private float rateOfFire = 60.0f;
 
+    public Animator animator;
+
     private float timeSinceLastShot;
     private PlayerUnit pUnit;
 
@@ -47,6 +49,7 @@ public class PlayerRangedUnit : MonoBehaviour
         {
             // Spawn bullet
             SpawnBullet(transform.position);
+            animator.SetTrigger("Attacking");
             timeSinceLastShot = 0.0f;
         }
 
