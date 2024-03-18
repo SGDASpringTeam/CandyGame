@@ -9,7 +9,7 @@ public class PlayerScript : MonoBehaviour
     private int remainingHits;
 
     private GameManager gameManager;
-    private GameObject resultsScreen;
+    [SerializeField] private GameObject resultsScreen;
 
     [SerializeField] private AudioClip _gameOverSound;
     [SerializeField] private int _gameOverSoundVolume = 1;
@@ -17,7 +17,7 @@ public class PlayerScript : MonoBehaviour
     private void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        resultsScreen = GameObject.Find("Results Screen");
+        //resultsScreen = GameObject.Find("Results Screen");
 
         remainingHits = totalHits;
     }

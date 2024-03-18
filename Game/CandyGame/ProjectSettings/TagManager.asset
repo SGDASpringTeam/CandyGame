@@ -8,6 +8,7 @@ TagManager:
   - Player Unit
   - Tile
   - Mold
+  - Enemy Unit
   layers:
   - Default
   - TransparentFX

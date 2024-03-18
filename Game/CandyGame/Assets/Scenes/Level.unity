@@ -873,7 +873,7 @@ GameObject:
   - component: {fileID: 277275048}
   - component: {fileID: 277275047}
   - component: {fileID: 277275046}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player Base
   m_TagString: Player Base
   m_Icon: {fileID: 0}
@@ -893,6 +893,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalHits: 3
+  resultsScreen: {fileID: 4653095157468277060}
+  _gameOverSound: {fileID: 8300000, guid: 09b9784371c064956ad7a3fd41244377, type: 3}
+  _gameOverSoundVolume: 1
 --- !u!61 &277275047
 BoxCollider2D:
   m_ObjectHideFlags: 0
