@@ -14,6 +14,8 @@ public class PlayerUnit : MonoBehaviour
     public float attackDamage;
     public float attackSpeed;
     public bool isRanged;
+    public bool isBomber;
+    private bool isBombing;
 
     [Header("Important Components")]
     [SerializeField] private HealthbarScript healthBar;
@@ -39,6 +41,8 @@ public class PlayerUnit : MonoBehaviour
     private GameManager gameManager;
     private Animator unitAnimator;
     private IEnumerator currentAttackRoutine;
+    private IEnumerator currentBombAttackRoutine;
+    
 
     // When Unit is dragged from Shop, disable properties until deployed on grid
     private void Start()
@@ -164,10 +168,16 @@ public class PlayerUnit : MonoBehaviour
             EnemyUnit enemyUnit = hit.collider.GetComponent<EnemyUnit>();
             if (enemyUnit != null && enemyUnit.currentHealth > 0)
             {
-                if (currentAttackRoutine == null && enemyUnit != null && enemyUnit.currentHealth > 0)
+                if (currentAttackRoutine == null && enemyUnit != null && enemyUnit.currentHealth > 0 && !isBomber)
                 {
                     currentAttackRoutine = TriggerAttack(enemyUnit);
                     StartCoroutine(currentAttackRoutine);
+                }
+                else if(currentAttackRoutine == null && enemyUnit != null && enemyUnit.currentHealth > 0 && isBomber && !isBombing)
+                {
+                    currentBombAttackRoutine = TriggerBombAttack(enemyUnit);
+                    StartCoroutine(currentBombAttackRoutine);
+                    isBombing = true;
                 }
             }
         }
@@ -189,6 +199,42 @@ public class PlayerUnit : MonoBehaviour
         }
         currentAttackRoutine = null;
     }
+
+    IEnumerator TriggerBombAttack(EnemyUnit foe)
+    {
+        Collider[] hitColliders = Physics.OverlapBox(gameObject.transform.position + new Vector3(3, 0), transform.localScale / 2 + new Vector3(4, 0), Quaternion.identity);
+        unitAnimator.SetTrigger("Attacking");
+        SFXPlayer.PlayClip2D(_unitAttackSound, _unitAttackSoundVolume);
+
+        foreach (Collider collider in hitColliders) 
+        {
+            Debug.Log("Colliders: " + collider);
+            if(collider.gameObject.tag == "Enemy Unit")
+            {
+                EnemyUnit enemyUnit = collider.gameObject.GetComponent<EnemyUnit>();
+                enemyUnit.currentHealth -= attackDamage * TypeDamageMultiplier(foe);
+            }
+        }
+        yield return new WaitForSeconds(attackSpeed);
+        
+
+        if (foe != null) // When Player Unit Kills Enemy Unit
+        {
+            KillEnemy(foe);
+        }
+        currentAttackRoutine = null;
+        Destroy(gameObject);
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        //Check that it is being run in Play Mode, so it doesn't try to draw this in Editor mode
+            //Draw a cube where the OverlapBox is (positioned where your GameObject is as well as a size)
+        Gizmos.DrawWireCube(gameObject.transform.position + new Vector3(3, 0), transform.localScale / 2 + new Vector3(4, 0));
+    }
+
+
     public void KillEnemy(EnemyUnit foe)
     {
         candyManager.ObtainMaterials(foe.type1, foe.type2);

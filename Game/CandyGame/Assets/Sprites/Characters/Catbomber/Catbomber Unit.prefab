@@ -56,6 +56,8 @@ MonoBehaviour:
   currentHealth: 15
   attackDamage: 7
   attackSpeed: 0.3
+  isRanged: 0
+  isBomber: 1
   healthBar: {fileID: 442342580238285000}
   _unitPlaceSound: {fileID: 8300000, guid: 38a4c21a1927c4a5d9611c9f90fe86bb, type: 3}
   _unitPlaceSoundVolume: 1
