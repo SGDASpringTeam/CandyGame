@@ -6108,6 +6108,8 @@ MonoBehaviour:
   spawnInterval: 2
   waveDuration: 10
   waveCount: 0
+  _newWaveSound: {fileID: 0}
+  _newWaveSoundVolume: 1
 --- !u!4 &1366437004
 Transform:
   m_ObjectHideFlags: 0
@@ -6914,6 +6916,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalHits: 3
+  resultsScreen: {fileID: 0}
+  _gameOverSound: {fileID: 0}
+  _gameOverSoundVolume: 1
 --- !u!1 &1633799774
 GameObject:
   m_ObjectHideFlags: 0

@@ -60,6 +60,8 @@ public class PlayerBullet : MonoBehaviour
             {
                 playerUnit.KillEnemy(foe);
             }
+
+            Destroy(this.gameObject);
         }
     }
 
