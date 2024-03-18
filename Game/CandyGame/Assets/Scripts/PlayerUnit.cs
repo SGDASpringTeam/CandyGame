@@ -13,6 +13,7 @@ public class PlayerUnit : MonoBehaviour
     public float currentHealth;
     public float attackDamage;
     public float attackSpeed;
+    public bool isRanged;
 
     [Header("Important Components")]
     [SerializeField] private HealthbarScript healthBar;
@@ -60,7 +61,7 @@ public class PlayerUnit : MonoBehaviour
         if (!deployed) ReadyToDeploy();
         else
         {
-            PrepareAttack();
+            if(!isRanged) PrepareAttack();
             UpdateHealth();
         }
     }
@@ -184,12 +185,16 @@ public class PlayerUnit : MonoBehaviour
 
         if (foe != null) // When Player Unit Kills Enemy Unit
         {
-            candyManager.ObtainMaterials(foe.type1, foe.type2);
-            gameManager.UpdateEnemiesDestroyed();
-            SFXPlayer.PlayClip2D(_enemyDeathSound, _enemyDeathSoundVolume);
-            Destroy(foe.gameObject);
+            KillEnemy(foe);
         }
         currentAttackRoutine = null;
+    }
+    public void KillEnemy(EnemyUnit foe)
+    {
+        candyManager.ObtainMaterials(foe.type1, foe.type2);
+        gameManager.UpdateEnemiesDestroyed();
+        SFXPlayer.PlayClip2D(_enemyDeathSound, _enemyDeathSoundVolume);
+        Destroy(foe.gameObject);
     }
 
     // Deals More or Less Damage based on the Type Matchup

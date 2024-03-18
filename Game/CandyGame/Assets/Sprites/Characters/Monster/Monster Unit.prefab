@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 41169444818529953}
   m_Layer: 3
   m_Name: Monster Unit
-  m_TagString: Untagged
+  m_TagString: Enemy Unit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

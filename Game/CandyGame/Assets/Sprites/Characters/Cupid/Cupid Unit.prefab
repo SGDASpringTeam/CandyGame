@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5624504940437604450}
   - component: {fileID: 8676699830516520799}
   - component: {fileID: 7500975474866987402}
+  - component: {fileID: 7693231423104770989}
   - component: {fileID: 7973082058985699975}
   - component: {fileID: 838110659461912270}
   - component: {fileID: 3640651964440822057}
@@ -108,6 +109,7 @@ MonoBehaviour:
   currentHealth: 12
   attackDamage: 3
   attackSpeed: 1
+  isRanged: 1
   healthBar: {fileID: 7773669016166209363}
   _unitPlaceSound: {fileID: 8300000, guid: 38a4c21a1927c4a5d9611c9f90fe86bb, type: 3}
   _unitPlaceSoundVolume: 1
@@ -119,6 +121,23 @@ MonoBehaviour:
   _enemyDeathSoundVolume: 1
   _moldBreak: {fileID: 8300000, guid: 91d9dd0afc0b14dd8b8a8e8d344fa023, type: 3}
   _moldBreakVolume: 1
+--- !u!114 &7693231423104770989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44903561806727420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6909c5345a0a85439619e75a8f60525, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 4550021838870176081, guid: d8819a006d9476643be1f553f5fb71f8, type: 3}
+  rangedDamage: 1
+  range: 5
+  bulletSpeed: 5
+  rateOfFire: 20
 --- !u!61 &7973082058985699975
 BoxCollider2D:
   m_ObjectHideFlags: 0

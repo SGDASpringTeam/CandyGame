@@ -1,20 +1,15 @@
 /**
  * Author: Hudson Green
- * Contributors: N/A
+ * Contributors: Alan Villalobos
  * Date Created: 2024-03-16
  * Description: Adds ranged abilities to enemy
 **/
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerUnit))]
 public class PlayerRangedUnit : MonoBehaviour
 {
-
-    public bool disableMeleeAttack = true;              // PlayerUnit.cs is responsible for checking if this is true
-
     [SerializeField] private GameObject bulletPrefab = null;
 
     [Header("Bullet Properties")]
@@ -24,27 +19,23 @@ public class PlayerRangedUnit : MonoBehaviour
     [SerializeField] private float range = 5.0f;
     [Tooltip("Speed of bullet in no particular unit of speed")]
     [SerializeField] private float bulletSpeed = 5.0f;
-    [Tooltip("Amount of enemies the bullet can hit before being killed (how many enemies can it pass thru?")]
-    [SerializeField] private int hitsUntilDespawn = 1;
 
     [Header("Gun Properties")]
     [Tooltip("Rate of fire in rounds per minute (RPM) (60 RPM = 1 shot per second)")]
     [SerializeField] private float rateOfFire = 60.0f;
 
-    private float timeSinceLastShot = 0.0f;
+    private float timeSinceLastShot;
+    private PlayerUnit pUnit;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        timeSinceLastShot = 0.0f;
+        pUnit = GetComponent<PlayerUnit>();
     }
 
     // Update is called once per frame
     void Update()
-    {
-        
-        PlayerUnit pUnit = GetComponent<PlayerUnit>();
-
+    {  
         // Guard against unit not being deployed yet
         if (!pUnit.deployed) return;
 
@@ -54,17 +45,15 @@ public class PlayerRangedUnit : MonoBehaviour
         // Spawn bullet given rate of fire
         if(timeSinceLastShot > (1.0f / rateOfFire) * 60.0f)
         {
-
             // Spawn bullet
             SpawnBullet(transform.position);
-
+            timeSinceLastShot = 0.0f;
         }
 
     }
 
     private void SpawnBullet(Vector3 spawnLocation)
     {
-
         // Guard against missing bullet prefab specified
         if (bulletPrefab == null) return;
 
@@ -75,8 +64,8 @@ public class PlayerRangedUnit : MonoBehaviour
         bullet.GetComponent<PlayerBullet>().rangedDamage = rangedDamage;
         bullet.GetComponent<PlayerBullet>().range = range;
         bullet.GetComponent<PlayerBullet>().bulletSpeed = bulletSpeed;
-        bullet.GetComponent<PlayerBullet>().hitsUntilDespawn = hitsUntilDespawn;
-
+        bullet.GetComponent<PlayerBullet>().type1 = pUnit.type1;
+        bullet.GetComponent<PlayerBullet>().type2 = pUnit.type2;
+        bullet.GetComponent<PlayerBullet>().playerUnit = pUnit;
     }
-
 }
