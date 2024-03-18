@@ -513,6 +513,8 @@ MonoBehaviour:
   moveSpeed: 1
   animator: {fileID: 0}
   healthBar: {fileID: 527793464307681375}
+  _enemyAttackSound: {fileID: 8300000, guid: 7d3335e60641c4369b216da246ca8927, type: 3}
+  _attackSoundVolume: 1
 --- !u!61 &5492962818081887842
 BoxCollider2D:
   m_ObjectHideFlags: 0

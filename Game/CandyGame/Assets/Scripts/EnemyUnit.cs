@@ -16,6 +16,10 @@ public class EnemyUnit : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private HealthbarScript healthBar;
 
+    [Header("Audio Components")]
+    [SerializeField] private AudioClip _enemyAttackSound;
+    [SerializeField] private int _enemyAttackSoundVolume = 1;
+
     // Important Variables for this Script
     private bool isAttacking;
     private IEnumerator currentAttackRoutine;
@@ -72,6 +76,7 @@ public class EnemyUnit : MonoBehaviour
         {
             //animator.SetTrigger("Attack");
             foe.currentHealth -= attackDamage * TypeDamageMultiplier(foe);
+            SFXPlayer.PlayClip2D(_enemyAttackSound, _enemyAttackSoundVolume);
             //Debug.Log("Dealt " + attackDamage * TypeDamageMultiplier(foe) + " damage to " + foe.gameObject.name + "!");
             yield return new WaitForSeconds(attackSpeed);
         }

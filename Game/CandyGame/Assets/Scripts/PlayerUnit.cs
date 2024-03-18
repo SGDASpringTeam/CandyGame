@@ -17,6 +17,19 @@ public class PlayerUnit : MonoBehaviour
     [Header("Important Components")]
     [SerializeField] private HealthbarScript healthBar;
 
+    [Header("Audio Components")]
+    [SerializeField] private AudioClip _unitPlaceSound;
+    [SerializeField] private int _unitPlaceSoundVolume = 1;
+    [SerializeField] private AudioClip _unitDeathSound;
+    [SerializeField] private int _unitDeathSoundVolume = 1;
+    [SerializeField] private AudioClip _unitAttackSound;
+    [SerializeField] private int _unitAttackSoundVolume = 1;
+    [SerializeField] private AudioClip _enemyDeathSound;
+    [SerializeField] private int _enemyDeathSoundVolume = 1;
+    [SerializeField] private AudioClip _moldBreak;
+    [SerializeField] private int _moldBreakVolume = 1;
+    // Audio Volume can be 0-1
+
     // Important Variables for this Script
     [NonSerialized] public bool deployed;
     private BoxCollider2D hitbox;
@@ -112,15 +125,18 @@ public class PlayerUnit : MonoBehaviour
                     if (placedTile.placeable && placedTile.currentUnit == null)
                     {
                         placedTile.PlaceUnit(this.gameObject);
+                        SFXPlayer.PlayClip2D(_unitPlaceSound, _unitPlaceSoundVolume);
                         deployed = true;
                         hitbox.enabled = true;
                         transform.position = hit.collider.gameObject.transform.position;
                         candyManager.DeployUnit(moldName);
+                        SFXPlayer.PlayClip2D(_moldBreak, _moldBreakVolume);
                         unitAnimator.speed = 1;
                         return;
                     }
                 }
             }
+            SFXPlayer.PlayClip2D(_unitDeathSound, _unitDeathSoundVolume);
             Destroy(this.gameObject);
         }
     }
@@ -134,6 +150,7 @@ public class PlayerUnit : MonoBehaviour
     private void KillUnit()
     {
         placedTile.currentUnit = null;
+        SFXPlayer.PlayClip2D(_unitDeathSound, _unitDeathSoundVolume);
         Destroy(gameObject);
     }
 
@@ -159,6 +176,7 @@ public class PlayerUnit : MonoBehaviour
         while (foe != null && foe.currentHealth > 0)
         {
             unitAnimator.SetTrigger("Attacking");
+            SFXPlayer.PlayClip2D(_unitAttackSound, _unitAttackSoundVolume);
             foe.currentHealth -= attackDamage * TypeDamageMultiplier(foe);
             //Debug.Log("Dealt " + attackDamage * TypeDamageMultiplier(foe) + " damage to " + foe.gameObject.name + "!");
             yield return new WaitForSeconds(attackSpeed);
@@ -168,6 +186,7 @@ public class PlayerUnit : MonoBehaviour
         {
             candyManager.ObtainMaterials(foe.type1, foe.type2);
             gameManager.UpdateEnemiesDestroyed();
+            SFXPlayer.PlayClip2D(_enemyDeathSound, _enemyDeathSoundVolume);
             Destroy(foe.gameObject);
         }
         currentAttackRoutine = null;

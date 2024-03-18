@@ -107,6 +107,16 @@ MonoBehaviour:
   attackDamage: 9
   attackSpeed: 0.1
   healthBar: {fileID: 3090067366912888565}
+  _unitPlaceSound: {fileID: 8300000, guid: 38a4c21a1927c4a5d9611c9f90fe86bb, type: 3}
+  _unitPlaceSoundVolume: 1
+  _unitDeathSound: {fileID: 8300000, guid: 01120e656759f4013bb27325ea5b0efe, type: 3}
+  _unitDeathSoundVolume: 1
+  _unitAttackSound: {fileID: 8300000, guid: c963cf9c00c084bcc8914620ae9f481c, type: 3}
+  _unitAttackSoundVolume: 1
+  _enemyDeathSound: {fileID: 8300000, guid: 960fcb87b315a4017b2383518ba787b7, type: 3}
+  _enemyDeathSoundVolume: 1
+  _moldBreak: {fileID: 8300000, guid: 91d9dd0afc0b14dd8b8a8e8d344fa023, type: 3}
+  _moldBreakVolume: 1
 --- !u!61 &7121966272021906450
 BoxCollider2D:
   m_ObjectHideFlags: 0
