@@ -175,7 +175,7 @@ public class PlayerUnit : MonoBehaviour
                 }
                 else if(currentAttackRoutine == null && enemyUnit != null && enemyUnit.currentHealth > 0 && isBomber && !isBombing)
                 {
-                    currentBombAttackRoutine = TriggerBombAttack(enemyUnit);
+                    currentBombAttackRoutine = TriggerBombAttack();
                     StartCoroutine(currentBombAttackRoutine);
                     isBombing = true;
                 }
@@ -199,29 +199,24 @@ public class PlayerUnit : MonoBehaviour
         }
         currentAttackRoutine = null;
     }
-
-    IEnumerator TriggerBombAttack(EnemyUnit foe)
+    IEnumerator TriggerBombAttack()
     {
-        Collider[] hitColliders = Physics.OverlapBox(gameObject.transform.position + new Vector3(3, 0), transform.localScale / 2 + new Vector3(4, 0), Quaternion.identity);
+        Collider2D[] hitColliders = Physics2D.OverlapBoxAll(gameObject.transform.position + new Vector3(3, 0), transform.localScale / 2 + new Vector3(4, 0), 0f);
         unitAnimator.SetTrigger("Attacking");
         SFXPlayer.PlayClip2D(_unitAttackSound, _unitAttackSoundVolume);
 
-        foreach (Collider collider in hitColliders) 
+        foreach (Collider2D collider in hitColliders)
         {
             Debug.Log("Colliders: " + collider);
-            if(collider.gameObject.tag == "Enemy Unit")
+            if (collider.CompareTag("Enemy Unit"))
             {
                 EnemyUnit enemyUnit = collider.gameObject.GetComponent<EnemyUnit>();
-                enemyUnit.currentHealth -= attackDamage * TypeDamageMultiplier(foe);
+                enemyUnit.currentHealth -= attackDamage * TypeDamageMultiplier(enemyUnit);
+                if (enemyUnit.currentHealth <= 0) KillEnemy(enemyUnit);
             }
         }
         yield return new WaitForSeconds(attackSpeed);
-        
 
-        if (foe != null) // When Player Unit Kills Enemy Unit
-        {
-            KillEnemy(foe);
-        }
         currentAttackRoutine = null;
         Destroy(gameObject);
     }
@@ -233,7 +228,6 @@ public class PlayerUnit : MonoBehaviour
             //Draw a cube where the OverlapBox is (positioned where your GameObject is as well as a size)
         Gizmos.DrawWireCube(gameObject.transform.position + new Vector3(3, 0), transform.localScale / 2 + new Vector3(4, 0));
     }
-
 
     public void KillEnemy(EnemyUnit foe)
     {
