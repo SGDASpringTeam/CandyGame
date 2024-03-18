@@ -52,10 +52,12 @@ MonoBehaviour:
   moldName: Candyworm
   type1: 2
   type2: 2
-  maxHealth: 5
-  currentHealth: 5
-  attackDamage: 20
+  maxHealth: 10
+  currentHealth: 10
+  attackDamage: 3
   attackSpeed: 0.2
+  isRanged: 0
+  isBomber: 0
   healthBar: {fileID: 4515863283242562409}
   _unitPlaceSound: {fileID: 8300000, guid: 38a4c21a1927c4a5d9611c9f90fe86bb, type: 3}
   _unitPlaceSoundVolume: 1

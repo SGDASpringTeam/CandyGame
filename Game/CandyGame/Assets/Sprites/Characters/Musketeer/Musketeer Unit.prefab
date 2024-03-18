@@ -51,12 +51,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moldName: Musketeer
-  type1: 1
+  type1: 0
   type2: 1
   maxHealth: 12
   currentHealth: 12
   attackDamage: 6
-  attackSpeed: 2
+  attackSpeed: 0.1
   isRanged: 1
   isBomber: 0
   healthBar: {fileID: 483238754544019535}
@@ -83,10 +83,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 8362619329409453936, guid: 3c974470acd72df40aa54ea654360ac0, type: 3}
-  rangedDamage: 1
+  rangedDamage: 2
   range: 5
-  bulletSpeed: 5
-  rateOfFire: 40
+  bulletSpeed: 15
+  rateOfFire: 8
   animator: {fileID: 329270657636887314}
 --- !u!212 &1513670131553108519
 SpriteRenderer:

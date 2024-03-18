@@ -108,7 +108,7 @@ MonoBehaviour:
   maxHealth: 12
   currentHealth: 12
   attackDamage: 3
-  attackSpeed: 1
+  attackSpeed: 0.5
   isRanged: 1
   isBomber: 0
   healthBar: {fileID: 7773669016166209363}
@@ -137,8 +137,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3790966507736899583, guid: c1953f54acf1532419a9aeace8d5f91e, type: 3}
   rangedDamage: 1
   range: 5
-  bulletSpeed: 5
-  rateOfFire: 20
+  bulletSpeed: 10
+  rateOfFire: 12
   animator: {fileID: 3640651964440822057}
 --- !u!61 &7973082058985699975
 BoxCollider2D:

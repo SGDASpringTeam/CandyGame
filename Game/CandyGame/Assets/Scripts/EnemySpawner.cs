@@ -39,7 +39,7 @@ public class EnemySpawner : MonoBehaviour
     {
         spawnedEnemies = 0;
         gameTime = 0.0f;
-        waveCount = 0;
+        waveCount = 1;
     }
     private void Update()
     {
@@ -72,6 +72,7 @@ public class EnemySpawner : MonoBehaviour
 
         // increments the wave # for every wave
         ++waveCount;
+        if (spawnInterval > 1) spawnInterval -= 0.1f;
         SFXPlayer.PlayClip2D(_newWaveSound, _newWaveSoundVolume);
         StartSpawning();
     }

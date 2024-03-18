@@ -32,7 +32,7 @@ public class PlayerBullet : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         // Check if location exceeds bullet range: dist = sqrt[(x2 - x1)^2 + (y2 - y1)^2]
