@@ -2030,6 +2030,9 @@ MonoBehaviour:
   LookupTextures:
   - {fileID: 2800000, guid: 1f86b6824089b354f95242eeada98bbe, type: 3}
   - {fileID: 2800000, guid: 6a6f0bbd9209e33478db7a5f134e128e, type: 3}
+  - {fileID: 2800000, guid: 0f4c2404e1dd7db4887c355af2d9051e, type: 3}
+  - {fileID: 2800000, guid: 96ee6d95c2600dc4f88d215de09b04fe, type: 3}
+  - {fileID: 2800000, guid: 6b6788ec2b43e784d87985a16e550b74, type: 3}
 --- !u!81 &720962763
 AudioListener:
   m_ObjectHideFlags: 0

@@ -110,6 +110,7 @@ MonoBehaviour:
   attackDamage: 3
   attackSpeed: 1
   isRanged: 1
+  isBomber: 0
   healthBar: {fileID: 7773669016166209363}
   _unitPlaceSound: {fileID: 8300000, guid: 38a4c21a1927c4a5d9611c9f90fe86bb, type: 3}
   _unitPlaceSoundVolume: 1
@@ -138,6 +139,7 @@ MonoBehaviour:
   range: 5
   bulletSpeed: 5
   rateOfFire: 20
+  animator: {fileID: 3640651964440822057}
 --- !u!61 &7973082058985699975
 BoxCollider2D:
   m_ObjectHideFlags: 0
