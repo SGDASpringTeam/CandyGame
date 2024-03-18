@@ -10259,6 +10259,8 @@ MonoBehaviour:
   spawnInterval: 3
   waveDuration: 15
   waveCount: 0
+  _newWaveSound: {fileID: 8300000, guid: 9ea1d4409c08542cd8ae48abb0320c74, type: 3}
+  _newWaveSoundVolume: 1
 --- !u!4 &1579081353
 Transform:
   m_ObjectHideFlags: 0

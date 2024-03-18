@@ -1,6 +1,6 @@
 /**
  * Author: Alan
- * Contributors: Hudson Green
+ * Contributors: Hudson Green, Matthew Doerr
  * Description: N/A
 **/
 
@@ -30,6 +30,10 @@ public class EnemySpawner : MonoBehaviour
     public float spawnInterval;
     public float waveDuration;
     public int waveCount;
+
+    [Header("Audio Components")]
+    [SerializeField] private AudioClip _newWaveSound;
+    [SerializeField] private int _newWaveSoundVolume = 1;
 
     private void Start()
     {
@@ -68,6 +72,7 @@ public class EnemySpawner : MonoBehaviour
 
         // increments the wave # for every wave
         ++waveCount;
+        SFXPlayer.PlayClip2D(_newWaveSound, _newWaveSoundVolume);
         StartSpawning();
     }
 }

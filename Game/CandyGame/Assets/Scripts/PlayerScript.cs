@@ -11,6 +11,9 @@ public class PlayerScript : MonoBehaviour
     private GameManager gameManager;
     private GameObject resultsScreen;
 
+    [SerializeField] private AudioClip _gameOverSound;
+    [SerializeField] private int _gameOverSoundVolume = 1;
+
     private void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
@@ -25,6 +28,7 @@ public class PlayerScript : MonoBehaviour
         if(--remainingHits <= 0)
         {
             resultsScreen.SetActive(true);
+            SFXPlayer.PlayClip2D(_gameOverSound, _gameOverSoundVolume);
             Time.timeScale = 0;
         }
 
